@@ -1,16 +1,15 @@
 {
-    "name": "scout-app-site",
+    "name": "fcc-indy",
     "version": "0.1.0",
-    "description": "Official website of the open source desktop app, Scout-App. The easiest way to process Sass.",
+    "description": "FCC Indy!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/scout-app/scout-app.git"
     },
-    "author": "The Jared Wilcurt",
+    "author": "Matt",
     "bugs": {
         "url": "https://github.com/scout-app/scout-app/issues"
     },
-    "homepage": "http://Scout-App.io",
     "devDependencies": {
         "express": "^4.13.4",
         "gulp": "^3.9.1",

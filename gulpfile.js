@@ -80,17 +80,18 @@ gulp.task('watch', function () {
 
 // Automatically opens the local server in your default browser
 gulp.task('open', function () {
-    var url = 'http://localhost:8000';
+    var url = 'http://localhost';
     var OS = process.platform;
-    var exectuable = '';
+    var executable = '';
 
     //OS Specific values for opening files.
     if (OS == 'darwin') { executable = 'open ';     }
     if (OS == 'linux')  { executable = 'xdg-open '; }
-    if (OS == 'win32')  { exectuable = 'explorer '; }
+    if (OS == 'win32')  { executable = 'explorer '; }
 
     //Run the OS specific command to open the url in the default browser
-    require("child_process").exec( exectuable + url );
+    require("child_process").exec( executable + url );
+    //open localhost at port 8000 Automatically
 });
 
 // The default Gulp task that happens when you run gulp.

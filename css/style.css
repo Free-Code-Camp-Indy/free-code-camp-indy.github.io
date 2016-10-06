@@ -3,10 +3,20 @@
   margin: 0 auto;
 }
 
+.container {
+  width: 100%;
+  max-width: 960px;
+  min-width: 320px;
+  margin: 0 auto;
+  height: inherit;
+}
+
 .header {
   width: 100%;
   background-color: #006400;
   height: 35px;
+  position: relative;
+  z-index: 6;
 }
 
 @media screen and (max-width: 600px) {
@@ -15,26 +25,17 @@
   }
 }
 
-.headList li {
-  display: inline-flex;
-  height: 35px;
-  margin-right: 10px;
-  text-align: center;
-  line-height: 35px;
-  font-family: Andale Mono;
-  font-weight: bold;
+.open {
+  transform: translateY(0);
+  transition: transform 0.6s ease;
 }
 
-.headList li a {
-  text-decoration: none;
-  color: white;
-  padding-left: 10px;
-  padding-right: 10px;
+.sec1 {
+  position: relative;
 }
 
-.headList li a:hover {
-  color: #006400;
-  background-color: white;
+@meia screen and (max-width: 600px) {
+  top: -175px;
 }
 
 .rightSide {
@@ -62,27 +63,75 @@
 @media screen and (max-width: 600px) {
   .hamburger {
     visibility: visible;
+    color: white;
   }
 }
 
 .mast {
-  display: inline-block;
+  display: inline-flex;
+  margin-top: 5px;
   color: white;
 }
 
 @media screen and (max-width: 600px) {
-  .mast h4 {
+  .mast {
     margin-right: 100px;
     line-height: 50px;
     font-size: 24px;
   }
 }
 
-.container {
-  width: 100%;
-  max-width: 960px;
-  min-width: 320px;
-  margin: 0 auto;
-  border-style: dashed;
-  height: inherit;
+.menu {
+  width: 200px;
+  background-color: #e6e6e6;
+  padding: 5px;
+  position: absolute;
+  right: 0;
+  visibility: hidden;
+  transform: translateY(-100%);
+  transition: transform 0.6s ease;
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+  border-bottom-color: #006400;
+  z-index: 1;
+}
+
+@media screen and (max-width: 600px) {
+  .menu {
+    visibility: visible;
+  }
+}
+
+.menuList {
+  list-style: none;
+  font-family: Andale Mono;
+  padding-right: 5px;
+}
+
+.menuList li {
+  text-align: right;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.headList li {
+  display: inline-flex;
+  height: 35px;
+  margin-right: 10px;
+  text-align: center;
+  line-height: 35px;
+  font-family: Andale Mono;
+  font-weight: bold;
+}
+
+.headList li a {
+  text-decoration: none;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.headList li a:hover {
+  color: #006400;
+  background-color: white;
 }
