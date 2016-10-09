@@ -134,9 +134,24 @@ hr {
   border-width: thin;
 }
 
+.event:nth-child(odd) {
+  background-color: #e6e6e6;
+}
+
 .event button {
   position: relative;
   text-align: center;
+}
+
+.picHandler {
+  width: 200px;
+  height: 200px;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 3px;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 .fccBtn {
@@ -199,6 +214,7 @@ footer .container ul {
   float: left;
   display: inline-block;
   min-width: 320px;
+  list-style: none;
 }
 
 #sec1 {
