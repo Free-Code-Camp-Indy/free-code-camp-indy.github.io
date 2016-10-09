@@ -10,6 +10,17 @@
     <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" charset="utf-8"></script>
     <script src="js/myjs.js" charset="utf-8"></script>
+    <!-- <script type="text/javascript">
+   $(document).ready(function(){
+     $.getJSON("https://api.meetup.com/oembed?url=http://www.meetup.com/ny-tech",
+  function (data) {
+      var htmlString = "";
+      $.each(data.items, function (i, item) {
+          htmlString += '<h3><a href="' + item.link + '" target="_blank">' + item.name + '</a></h3>';
+      });
+      $('#groups').html(htmlString);});
+   });
+   </script> -->
   </head>
   <body>
     <div class="wrapper">
@@ -41,17 +52,39 @@
           <h1>
             Join our community of new and experienced coders in Indianapoils:
           </h1>
-          <img src="#" alt="FreeCodeCamp Indianapolis Meetup!">
           <h3><a href="#">Join us!</a></h3>
-
+          <img src="images/placeHolder.jpg" alt="FreeCodeCamp Indianapolis Meetup!">
+          <center><button class="fccBtn"> Sample Button</button></center>
         </div>
       </div>
       <div class="sec2">
         <div class="container">
-          <blockquote class="embedly-card" data-card-key="589fc5809e584ef089f91a91d0226343" data-card-controls="0" data-card-align="right"><h4><a href="https://www.meetup.com/Free-Code-Camp-Indy/">Free Code Camp Indy</a></h4><p>This group is for freeCodeCamp members in and around the Indianapolis area as well as non-members who are interested in learning to code. We host code and coffee's about once a month as well as variou</p></blockquote>
-          <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+          <h2>What's on our Calendar:</h2>
+          <div class="event">
+            <h3>Event Title</h3>
+            <h4>date</h4>
+            <p>Bacon ipsum dolor amet salami kielbasa rump pork loin tri-tip. Brisket meatball andouille kevin sausage sirloin, short loin pork loin kielbasa rump filet mignon chicken picanha venison beef ribs. Beef ribs chicken shankle, turducken prosciutto brisket capicola pork belly pork loin ground round ball tip hamburger salami tongue meatloaf. Hamburger bacon beef, ground round ribeye doner frankfurter swine pork chop kevin short loin.</p>
+            <button class="fccBtn">Join this Meeting!</button>
+          </div>
+          <div class="event">
+            <h3>Event Title</h3>
+            <h4>date</h4>
+            <p>Bacon ipsum dolor amet salami kielbasa rump pork loin tri-tip. Brisket meatball andouille kevin sausage sirloin, short loin pork loin kielbasa rump filet mignon chicken picanha venison beef ribs. Beef ribs chicken shankle, turducken prosciutto brisket capicola pork belly pork loin ground round ball tip hamburger salami tongue meatloaf. Hamburger bacon beef, ground round ribeye doner frankfurter swine pork chop kevin short loin.</p>
+            <button class="fccBtn">Join this Meeting!</button>
+          </div>
+          <div class="event">
+            <h3>Event Title</h3>
+            <h4>date</h4>
+            <p>Bacon ipsum dolor amet salami kielbasa rump pork loin tri-tip. Brisket meatball andouille kevin sausage sirloin, short loin pork loin kielbasa rump filet mignon chicken picanha venison beef ribs. Beef ribs chicken shankle, turducken prosciutto brisket capicola pork belly pork loin ground round ball tip hamburger salami tongue meatloaf. Hamburger bacon beef, ground round ribeye doner frankfurter swine pork chop kevin short loin.</p>
+            <button class="fccBtn">Join this Meeting!</button>
+          </div>
         </div>
       </div>
+      <footer>
+        <div id="groups"></div>
+        <blockquote class="embedly-card" data-card-key="589fc5809e584ef089f91a91d0226343" data-card-controls="0" data-card-align="right"><h4><a href="https://www.meetup.com/Free-Code-Camp-Indy/">Free Code Camp Indy</a></h4><p>This group is for freeCodeCamp members in and around the Indianapolis area as well as non-members who are interested in learning to code. We host code and coffee's about once a month as well as variou</p></blockquote>
+        <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+      </footer>
     </div>
   </body>
 </html>
