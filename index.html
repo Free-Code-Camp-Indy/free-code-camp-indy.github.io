@@ -20,19 +20,22 @@
       });
       $('#groups').html(htmlString);});
    });
+   - Google doc -
+   https://docs.google.com/document/d/1PBaRWUjsR6IVD2P5Tz7H1N6wzE8awM7oETdUfBA9o1Q/edit?usp=sharing
+
    </script> -->
   </head>
   <body>
     <div class="wrapper">
       <div class="header" >
-        <div class="container" style="">
+        <div class="container">
           <h4 class="mast">FreeCodeCamp Indy</h4>
           <div class="rightSide">
             <ul class="headList">
               <li> <a href="#">Home</a> </li>
-              <li> <a href="#">Sec1</a> </li>
-              <li> <a href="#">Sec2</a> </li>
-              <li> <a href="#">Sec3</a> </li>
+              <li> <a href="#sec2">Events</a> </li>
+              <li> <a href="#info">Info</a> </li>
+              <li> <a href="#blogs">Blogs</a> </li>
             </ul>
           </div>
           <div class="hamburger glyphicon glyphicon-menu-hamburger">
@@ -42,12 +45,12 @@
       <div class="menu">
         <ul class="menuList">
           <li> <a href="#">Home</a> </li>
-          <li> <a href="#">Sec1</a> </li>
-          <li> <a href="#">Sec2</a> </li>
-          <li> <a href="#">Sec3</a> </li>
+          <li> <a href="#sec2">Events</a> </li>
+          <li> <a href="#info">Info</a> </li>
+          <li> <a href="#blog">Blogs</a> </li>
         </ul>
       </div>
-      <div class="sec1" >
+      <div id="sec1" >
         <div class="container">
           <h1>
             Join our community of new and experienced coders in Indianapoils:
@@ -55,33 +58,54 @@
           <h3><a href="#">Join us!</a></h3>
           <img src="images/placeHolder.jpg" alt="FreeCodeCamp Indianapolis Meetup!">
           <center><button class="fccBtn"> Sample Button</button></center>
+          <hr>
         </div>
       </div>
-      <div class="sec2">
+      <div id="sec2">
         <div class="container">
           <h2>What's on our Calendar:</h2>
           <div class="event">
             <h3>Event Title</h3>
             <h4>date</h4>
+            <h5>Location</h5>
             <p>Bacon ipsum dolor amet salami kielbasa rump pork loin tri-tip. Brisket meatball andouille kevin sausage sirloin, short loin pork loin kielbasa rump filet mignon chicken picanha venison beef ribs. Beef ribs chicken shankle, turducken prosciutto brisket capicola pork belly pork loin ground round ball tip hamburger salami tongue meatloaf. Hamburger bacon beef, ground round ribeye doner frankfurter swine pork chop kevin short loin.</p>
-            <button class="fccBtn">Join this Meeting!</button>
+            <center><button class="fccBtn">Join this Meeting!</button></center>
           </div>
           <div class="event">
             <h3>Event Title</h3>
             <h4>date</h4>
             <p>Bacon ipsum dolor amet salami kielbasa rump pork loin tri-tip. Brisket meatball andouille kevin sausage sirloin, short loin pork loin kielbasa rump filet mignon chicken picanha venison beef ribs. Beef ribs chicken shankle, turducken prosciutto brisket capicola pork belly pork loin ground round ball tip hamburger salami tongue meatloaf. Hamburger bacon beef, ground round ribeye doner frankfurter swine pork chop kevin short loin.</p>
-            <button class="fccBtn">Join this Meeting!</button>
+            <center><button class="fccBtn">Join this Meeting!</button></center>
           </div>
           <div class="event">
             <h3>Event Title</h3>
             <h4>date</h4>
             <p>Bacon ipsum dolor amet salami kielbasa rump pork loin tri-tip. Brisket meatball andouille kevin sausage sirloin, short loin pork loin kielbasa rump filet mignon chicken picanha venison beef ribs. Beef ribs chicken shankle, turducken prosciutto brisket capicola pork belly pork loin ground round ball tip hamburger salami tongue meatloaf. Hamburger bacon beef, ground round ribeye doner frankfurter swine pork chop kevin short loin.</p>
-            <button class="fccBtn">Join this Meeting!</button>
+            <center><button class="fccBtn">Join this Meeting!</button></center>
           </div>
+          <hr>
         </div>
       </div>
+      <div id="info">
+        <div class="container">
+          <h2>FAQ about Free Code Camp Indy</h2>
+        </div>
+      </div>
+      <div id="blogs">
+        <div class="container">
+          <h2>Blogs from our community:</h2>
+          <ul>
+            <li><a href="#">Name of Blog</a></li>
+            <li><a href="#">The Secret Life of Math.Pi</a></li>
+            <li><a href="#">Chronicles of Marginia</a></li>
+            <li><a href="#">The Whimical Wife of Wiki</a></li>
+          </ul>
+        </div>
+      </div>
+
       <footer>
-        <div id="groups"></div>
+        <div id="groups">
+        </div>
         <blockquote class="embedly-card" data-card-key="589fc5809e584ef089f91a91d0226343" data-card-controls="0" data-card-align="right"><h4><a href="https://www.meetup.com/Free-Code-Camp-Indy/">Free Code Camp Indy</a></h4><p>This group is for freeCodeCamp members in and around the Indianapolis area as well as non-members who are interested in learning to code. We host code and coffee's about once a month as well as variou</p></blockquote>
         <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
       </footer>
