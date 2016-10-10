@@ -45,19 +45,19 @@ hr {
   z-index: 6;
 }
 
-@media screen and (max-width: 600px) {
+@media handheld, screen and (max-width: 600px) {
   .header {
     height: 50px;
   }
 }
 
-@meia screen and (max-width: 600px);
+@meia handheld, screen and (max-width: 600px);
 .rightSide {
   float: right;
   width: 320px;
 }
 
-@media screen and (max-width: 600px) {
+@media handheld, screen and (max-width: 600px) {
   .rightSide {
     visibility: hidden;
   }
@@ -74,7 +74,7 @@ hr {
   text-align: right;
 }
 
-@media screen and (max-width: 600px) {
+@media handheld, screen and (max-width: 600px) {
   .hamburger {
     visibility: visible;
     color: white;
@@ -87,7 +87,7 @@ hr {
   color: white;
 }
 
-@media screen and (max-width: 600px) {
+@media handheld, screen and (max-width: 600px) {
   .mast {
     margin-right: 100px;
     line-height: 50px;
@@ -109,7 +109,7 @@ hr {
   z-index: 5;
 }
 
-@media screen and (max-width: 600px) {
+@media handheld, screen and (max-width: 600px) {
   .menu {
     visibility: visible;
   }
