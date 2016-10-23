@@ -18,12 +18,12 @@ function errorLog (error) {
 // Uglify JS - Targets all .js files in the _js folder and converts
 // them to functionally identical code that uses less bytes in the _scripts folder
 gulp.task('uglify', function () {
-    gulp.src('_js/*.js')
+    gulp.src('js/*.js')
         .pipe(uglify())
         .on('error', errorLog)
         .pipe(insert.append('\n'))
         .pipe(crlf({eolc:'CRLF', encoding:'utf8'}))
-        .pipe(gulp.dest('_scripts'));
+        .pipe(gulp.dest('scripts'));
 });
 
 // Create expanded and .min versions of Sass styles in the _styles folder as CSS
@@ -33,7 +33,7 @@ gulp.task('sass', function () {
         .on('error', sass.logError))
         .pipe(crlf({eolc:'CRLF', encoding:'utf8'}))
         .pipe(gulp.dest('css/'))
-        .pipe(rename('style.min.css'))
+        .pipe(rename('style.css'))
         .pipe(sass({ outputStyle: 'compressed' }))
         .pipe(crlf({eolc:'CRLF', encoding:'utf8'}))
         .pipe(gulp.dest('css/'))
@@ -52,7 +52,7 @@ gulp.task('serve', function (done) {
     var express = require('express');
     var app = express();
     //path to the folder that will be served. __dirname is project root
-    var path = '*';
+    var path = __dirname;
     app.use(express.static(path));
     app.listen(8000, function () {
          done();
@@ -69,10 +69,9 @@ gulp.task('html', function () {
 // Watch for changes in JS, Sass, and HTML files, then Lint,
 // Uglify, Process the Sass, and reload the browser automatically
 gulp.task('watch', function () {
-  var server = livereload();
     gulp.watch('js/*.js', ['lint']);
     gulp.watch('js/*.js', ['uglify']);
-    gulp.watch('sass/*.sass', ['sass']);
+    gulp.watch('sass/*', ['sass']);
     gulp.watch('*.html', ['html']);
 
     livereload.listen();
@@ -80,18 +79,17 @@ gulp.task('watch', function () {
 
 // Automatically opens the local server in your default browser
 gulp.task('open', function () {
-    var url = 'http://localhost';
+    var url = 'http://localhost:8000';
     var OS = process.platform;
     var executable = '';
 
     //OS Specific values for opening files.
-    if (OS == 'darwin') { executable = 'open ';     }
-    if (OS == 'linux')  { executable = 'xdg-open '; }
-    if (OS == 'win32')  { executable = 'explorer '; }
+    if (OS == 'darwin') { executable = 'open "' + url + '"'; }
+    if (OS == 'linux')  { executable = 'xdg-open ' + url;    }
+    if (OS == 'win32')  { executable = 'explorer ' + url;    }
 
     //Run the OS specific command to open the url in the default browser
-    require("child_process").exec( executable + url );
-    //open localhost at port 8000 Automatically
+    require('child_process').exec(executable);
 });
 
 // The default Gulp task that happens when you run gulp.
