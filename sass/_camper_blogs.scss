@@ -1,0 +1,42 @@
+.camper_blogs{
+  background-color: $fccred;
+  width: 100%;
+  min-height: 200px;
+  padding: 25px 100px;
+  
+  h2{
+    color: white;
+    text-align: center;
+  }
+  
+  .blog {
+    width: 600px;
+    margin: 10px auto;
+    background-color: white;
+    border-radius: 3px;
+    
+    .blog_img_container{
+      display: inline-block;
+      width: 120px;
+      height: 120px;
+      padding: 10px;
+    }
+    
+    img {
+      height: 100%;
+      width: 100%;
+      margin: 0px;
+    }
+    
+    .blog_description{
+      display: inline-block;
+      width: 460px;
+      text-align: center;
+      
+      h3{
+        margin: 0px;
+        padding: 0px;
+      }
+    }
+  }
+}
