@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+/nbproject/private/
+=======
 # bower
 bower_components
 
@@ -148,3 +151,4 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+>>>>>>> upstream/master
