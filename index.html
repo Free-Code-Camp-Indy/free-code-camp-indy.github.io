@@ -15,109 +15,13 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="header" >
-        <div class="container">
-          <h4 class="mast">FreeCodeCamp Indy</h4>
-          <div class="rightSide">
-            <ul class="headList">
-              <li> <a href="index.html">Home</a> </li>
-              <li> <a href="info.html">Info</a> </li>
-              <li> <a href="campers.html">Campers</a></li>
-              <li> <a href="gallery.html">Gallery</a></li>
-              <li> <a href="contact.html">Contact</a></li>
-            </ul>
-          </div>
-          <div class="hamburger">
-            <button class="menuBtn">Menu</button>
-          </div>
-        </div>
-      </div> <!-- end Header -->
-      <div class="menu">
-        <ul class="menuList">
-          <li> <a href="index.html">Home</a> </li>
-          <li> <a href="info.html">Info</a> </li>
-          <li> <a href="campers.html">Campers</a></li>
-          <li> <a href="gallery.html">Gallery</a></li>
-          <li> <a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
+      <nav class="include" data-include="header">
+      </nav>
       <div id="sec1" >
-        <div class="container">
-          <!-- coolbanner -->
-          <div class="coolbanner">
-            <p>Coolbanner</p>
-          </div>
-        </div>
-        <div class="meetups">
-          <div class="block">
-            <h3>Upcoming Meetups</h3>
-          </div>
-        <div class="container ">
-
-          <div class="container">
-
-          </div>
-          <div class="meetupPanel">
-            <h4>You just missed</h4>
-            <a href="">
-              <!-- update this to grab the location-->
-              <img src="images/placeHolder.jpg" alt="Past Meetup">
-            </a>
-            <h4>update this with api to grab the title and if it's super long maybe we can add more rules to this</h4>
-            <p>update this with the api to import the details.  Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)</p>
-            <!-- update this to the past link -->
-            <a href=""><div class="fccBtn-small">Join us!</div></a>
-          </div>
-          <div class="meetupPanel">
-            <h4>Happening Soon</h4>
-            <a href="">
-              <!-- update this to grab the location-->
-              <img src="images/placeHolder.jpg" alt="Current Meetup">
-            </a>
-            <h4>update this with api to grab the title and if it's super long maybe we can add more rules to this</h4>
-            <p>update this with the api to import the details.  Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)</p>
-            <!-- update this to the current link -->
-            <a href=""><div class="fccBtn-small">Join us!</div></a>
-          </div>
-          <div class="meetupPanel">
-            <h4>Upcoming</h4>
-            <a href="">
-              <!-- updatethiswithapi to grab the location-->
-              <img src="images/placeHolder.jpg" alt="Next Meetup">
-            </a>
-            <h4>update this with api to grab the title and if it's super long maybe we can add more rules to this</h4>
-            <p>update this with the api to import the details.  Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)</p>
-            <!-- update this to the future link -->
-            <a href=""><div class="fccBtn-small">Join us!</div></a>
-          </div>
-        </div>
-        </div>
+        <div class="include" data-include="index-banner"></div>
+        <div class="include" data-include="index-meetup"></div>
       </div>
-      <div id="sec2">
-      </div>
-      <div id="info">
-      </div>
-      <div id="blogs">
-      </div>
-
-      <footer>
-        <div class="container">
-          <h5>We'd like ot thank:</h5>
-          <ul>
-            <li><a href="#">FreeCodeCamp</a></li>
-            <li><a href="#">Ion3</a></li>
-            <li><a href="#">Club Cyberia</a></li>
-            <li><a href="#">The Iron Yard</a></li>
-          </ul>
-          <div id="groups">
-          </div>
-          <blockquote class="embedly-card" data-card-key="589fc5809e584ef089f91a91d0226343" data-card-controls="0" data-card-align="right"><h4><a href="https://www.meetup.com/Free-Code-Camp-Indy/">Free Code Camp Indy</a></h4><p>This group is for freeCodeCamp members in and around the Indianapolis area as well as non-members who are interested in learning to code. We host code and coffee's about once a month as well as variou</p></blockquote>
-          <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
-        </div>
-        <center><p>&copy 2016 FreeCodeCamp Indy Meetup Group</p></center>
-
-
-      </footer>
+      <footer class="include" data-include="footer"></footer>
     </div>
   </body>
 </html>
