@@ -92,6 +92,10 @@ On the [Projects Page](https://github.com/Free-Code-Camp-Indy/free-code-camp-ind
 
 **[Gwen Faraday](https://github.com/gwenf)**
 
-### Advisor:
+### Designers:
+
+### Developers:
+
+### Advisors:
 
 * **[The Jared Wilcurt](https://github.com/TheJaredWilcurt)**
