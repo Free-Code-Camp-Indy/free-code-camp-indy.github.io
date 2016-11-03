@@ -4,7 +4,7 @@ http://free-code-camp-indy.github.io
 
 ## Navigation
 
-[About this Project](#about-this-page) <br>
+[About this Project](#about-this-project) <br>
 [Contribution Guidelines](#contribution-guidelines) <br>
 [The Projects Page (Boards)](#the-projects-page-boards) <br>
 [Prerequisites for running locally](#prerequisites-for-running-locally) <br>
@@ -12,7 +12,7 @@ http://free-code-camp-indy.github.io
 [Running locally (all subsequent times)](#running-locally-all-subsequent-times) <br>
 [Including Styles (Sass or CSS)](#including-styles-sass-or-css) <br>
 [Assets](#assets) <br>
-[Credits](credits)
+[Credits](#credits)
 
 
 ## About this Project
