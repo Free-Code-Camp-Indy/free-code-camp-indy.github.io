@@ -49,7 +49,16 @@ On the [Projects Page](https://github.com/Free-Code-Camp-Indy/free-code-camp-ind
 ## Running locally (first time)
 
 1. Fork this repo
+
+ * Click the `fork` button at the top right of this repository
+
 1. Clone down your fork
+
+ * Mac Users - Open Terminal
+ * Windows Users - Open Command Prompt
+ * Type: `git clone https://github.com/Free-Code-Camp-Indy/free-code-camp-indy.github.io fcc-indy` and press enter
+ * You now have the project stored in a folder named: `fcc-indy`
+
 1. Create a new branch named "issue#" based on which issue you are taking, example `issue7` or `issue15`
 1. Open your command prompt/terminal window and `cd` into the cloned down repo
 1. Run: `npm install`
