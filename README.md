@@ -45,6 +45,21 @@ On the [Projects Page](https://github.com/Free-Code-Camp-Indy/free-code-camp-ind
 1. Navigate to [localhost:8000](http://localhost:8000)
 1. Click the livereload icon in your browser to enable it for that page
 
+## Including Styles (Sass or CSS)
+
+1. Sass indented syntax files:
+
+  * Save file with a `.sass` extention and precede filename with an `_` (eg `_filename.sass`)
+  * Import file into `style.sass` file
+  
+1. CSS or SCSS syntax files:
+
+  * Save file with a `.scss` extention and precede filename with an `_` (eg `_filename.scss`)
+  * Import file into `style.sass` file
+  
+## Assets
+
+[Google Drive](https://drive.google.com/drive/u/2/folders/0Bx3Axcu05dYsQW1raUFCSGM1Vzg) - *May have to request access*
 
 ## Running locally (all subsequent times)
 
