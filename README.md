@@ -84,5 +84,14 @@ On the [Projects Page](https://github.com/Free-Code-Camp-Indy/free-code-camp-ind
 
 ## Credits
 
-* Matt
-* [The Jared Wilcurt](https://github.com/TheJaredWilcurt) - Advisor, `README.md` instructions, code reviews
+### Team Leader/Developer:
+
+**[Matt Albright](https://github.com/orgs/Free-Code-Camp-Indy/people/mattattaq)**
+
+### Project Manager:
+
+**[Gwen Faraday](https://github.com/gwenf)**
+
+### Advisor:
+
+* **[The Jared Wilcurt](https://github.com/TheJaredWilcurt)**
