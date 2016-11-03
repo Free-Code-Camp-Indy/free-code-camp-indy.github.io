@@ -2,6 +2,18 @@
 
 http://free-code-camp-indy.github.io
 
+## Navigation
+
+[About this Project](#about-this-page) <br>
+[Contribution Guidelines](#contribution-guidelines) <br>
+[The Projects Page (Boards)](#the-projects-page-boards) <br>
+[Prerequisites for running locally](#prerequisites-for-running-locally) <br>
+[Running locally (first time)](#running-locally-first-time) <br>
+[Running locally (all subsequent times)](#running-locally-all-subsequent-times) <br>
+[Including Styles (Sass or CSS)](#including-styles-sass-or-css) <br>
+[Assets](#assets) <br>
+[Credits](credits)
+
 
 ## About this Project
 
@@ -45,6 +57,14 @@ On the [Projects Page](https://github.com/Free-Code-Camp-Indy/free-code-camp-ind
 1. Navigate to [localhost:8000](http://localhost:8000)
 1. Click the livereload icon in your browser to enable it for that page
 
+
+## Running locally (all subsequent times)
+
+1. Run `npm install` (in case any dependencies have changed)
+1. Run `npm start`
+1. Navigate to [localhost:8000](http://localhost:8000)
+1. Click the livereload icon in your browser to enable it for that page
+
 ## Including Styles (Sass or CSS)
 
 1. Sass indented syntax files:
@@ -60,13 +80,6 @@ On the [Projects Page](https://github.com/Free-Code-Camp-Indy/free-code-camp-ind
 ## Assets
 
 [Google Drive](https://drive.google.com/drive/u/2/folders/0Bx3Axcu05dYsQW1raUFCSGM1Vzg) - *May have to request access*
-
-## Running locally (all subsequent times)
-
-1. Run `npm install` (in case any dependencies have changed)
-1. Run `npm start`
-1. Navigate to [localhost:8000](http://localhost:8000)
-1. Click the livereload icon in your browser to enable it for that page
 
 
 ## Credits
