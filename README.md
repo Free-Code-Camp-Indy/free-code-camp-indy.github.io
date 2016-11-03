@@ -50,12 +50,12 @@ On the [Projects Page](https://github.com/Free-Code-Camp-Indy/free-code-camp-ind
 1. Sass indented syntax files:
 
   * Save file with a `.sass` extention and precede filename with an `_` (eg `_filename.sass`)
-  * Import file into `style.sass` file
+  * Import file into `style.sass` file (eg `@import "filename" - `_` and extention not required)
   
 1. CSS or SCSS syntax files:
 
   * Save file with a `.scss` extention and precede filename with an `_` (eg `_filename.scss`)
-  * Import file into `style.sass` file
+  * Import file into `style.sass` file (eg `@import "filename" - `_` and extention not required)
   
 ## Assets
 
