@@ -103,7 +103,11 @@ On the [Projects Page](https://github.com/Free-Code-Camp-Indy/free-code-camp-ind
 
 ### Designers:
 
+*coming soon...*
+
 ### Developers:
+
+*coming soon...*
 
 ### Advisors:
 
