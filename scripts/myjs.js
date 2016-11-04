@@ -1,1 +1,1 @@
-$(function(){console.log("myJs works!"),$(".hamburger").on("click",function(){$(".menu").toggleClass("open"),console.log("fired!")}),console.log("this injection works!");var o=$(".include");jQuery.each(o,function(){var o="views/"+$(this).data("include")+".html";$(this).load(o)})});
+$(function(){console.log("myJs works!");var i=$(".include");jQuery.each(i,function(){var i="views/"+$(this).data("include")+".html";$(this).load(i)})});

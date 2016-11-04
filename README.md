@@ -2,6 +2,18 @@
 
 http://free-code-camp-indy.github.io
 
+## Navigation
+
+[About this Project](#about-this-project) <br>
+[Contribution Guidelines](#contribution-guidelines) <br>
+[The Projects Page (Boards)](#the-projects-page-boards) <br>
+[Prerequisites for running locally](#prerequisites-for-running-locally) <br>
+[Running locally (first time)](#running-locally-first-time) <br>
+[Running locally (all subsequent times)](#running-locally-all-subsequent-times) <br>
+[Including Styles (Sass or CSS)](#including-styles-sass-or-css) <br>
+[Assets](#assets) <br>
+[Credits](#credits)
+
 
 ## About this Project
 
@@ -37,7 +49,16 @@ On the [Projects Page](https://github.com/Free-Code-Camp-Indy/free-code-camp-ind
 ## Running locally (first time)
 
 1. Fork this repo
+
+ * Click the `fork` button at the top right of this repository
+
 1. Clone down your fork
+
+ * Mac Users - Open Terminal
+ * Windows Users - Open Command Prompt
+ * Type: `git clone https://github.com/Free-Code-Camp-Indy/free-code-camp-indy.github.io fcc-indy` and press enter
+ * You now have the project stored in a folder named: `fcc-indy`
+
 1. Create a new branch named "issue#" based on which issue you are taking, example `issue7` or `issue15`
 1. Open your command prompt/terminal window and `cd` into the cloned down repo
 1. Run: `npm install`
@@ -53,8 +74,41 @@ On the [Projects Page](https://github.com/Free-Code-Camp-Indy/free-code-camp-ind
 1. Navigate to [localhost:8000](http://localhost:8000)
 1. Click the livereload icon in your browser to enable it for that page
 
+## Including Styles (Sass or CSS)
+
+1. Sass indented syntax files:
+
+  * Save file with a `.sass` extension and precede filename with an `_` (eg `_filename.sass`)
+  * Import file into `style.sass` file (eg `@import "filename"` - `_` and extension not required)
+  
+1. CSS or SCSS syntax files:
+
+  * Save file with a `.scss` extension and precede filename with an `_` (eg `_filename.scss`)
+  * Import file into `style.sass` file (eg `@import "filename"` - `_` and extension not required)
+  
+## Assets
+
+[Google Drive](https://drive.google.com/drive/u/2/folders/0Bx3Axcu05dYsQW1raUFCSGM1Vzg) - *May have to request access*
+
 
 ## Credits
 
-* Matt
-* [The Jared Wilcurt](https://github.com/TheJaredWilcurt) - Advisor, `README.md` instructions, code reviews
+### Team Leader/Developer:
+
+**[Matt Albright](https://github.com/orgs/Free-Code-Camp-Indy/people/mattattaq)**
+
+### Project Manager:
+
+**[Gwen Faraday](https://github.com/gwenf)**
+
+### Designers:
+
+*coming soon...*
+
+### Developers:
+
+*coming soon...*
+
+### Advisors:
+
+* **[The Jared Wilcurt](https://github.com/TheJaredWilcurt)**

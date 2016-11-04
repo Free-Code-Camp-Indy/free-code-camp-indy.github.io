@@ -1,3 +1,11 @@
+<script type="text/javascript">
+$(function(){
+  $('.hamburger').on('click', function(){
+    $('.menu').toggleClass('open');
+    console.log('fired!');
+  });
+});
+</script>
 <div class="header" >
   <div class="container">
     <h4 class="mast">FreeCodeCamp Indy</h4>
@@ -11,7 +19,7 @@
       </ul>
     </div>
     <div class="hamburger">
-      <button class="menuBtn">Menu</button>
+      <button class="menuBtn ">Menu</button>
     </div>
   </div>
 </div> <!-- end Header -->
@@ -22,5 +30,5 @@
     <li> <a href="campers.html">Campers</a></li>
     <li> <a href="gallery.html">Gallery</a></li>
     <li> <a href="contact.html">Contact</a></li>
+  </div>
   </ul>
-</div>
