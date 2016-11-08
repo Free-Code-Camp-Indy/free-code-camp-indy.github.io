@@ -1,11 +1,10 @@
 .camper_blogs{
-  background-color: $fccred;
+  //background-color: $fccred;
   width: 100%;
   min-height: 200px;
-  padding: 25px 100px;
+  padding: 5px 100px 25px 100px;
   
   h2{
-    color: white;
     text-align: center;
   }
   
@@ -14,6 +13,7 @@
     margin: 10px auto;
     background-color: white;
     border-radius: 3px;
+    border: solid black 2px;
     
     .blog_img_container{
       display: inline-block;
