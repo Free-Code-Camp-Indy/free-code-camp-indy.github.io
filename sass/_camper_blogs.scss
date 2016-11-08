@@ -4,7 +4,7 @@
   min-height: 200px;
   padding: 5px 100px 25px 100px;
   
-  h2{
+  h2 {
     text-align: center;
   }
   
@@ -15,7 +15,7 @@
     border-radius: 3px;
     border: solid black 2px;
     
-    .blog_img_container{
+    .blog_img_container {
       display: inline-block;
       width: 120px;
       height: 120px;
@@ -28,12 +28,12 @@
       margin: 0px;
     }
     
-    .blog_description{
+    .blog_description {
       display: inline-block;
       width: 460px;
       text-align: center;
       
-      h3{
+      h3 {
         margin: 0px;
         padding: 0px;
       }
