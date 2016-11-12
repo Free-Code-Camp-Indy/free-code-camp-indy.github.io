@@ -148,3 +148,7 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+#Netbeans generated files
+
+nbproject/
