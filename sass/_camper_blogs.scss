@@ -4,12 +4,38 @@
   min-height: 200px;
   padding: 5px 100px 25px 100px;
   
-  h2 {
-    text-align: center;
+  .subtitle {
+    width: 243px;
+    margin: 0 auto;
+    
+    h2 {
+      display: inline-block;
+      width: 120px;
+      margin: 10px 0px;
+      padding: 0px;
+    }
+    
+    h2:hover {
+      cursor: pointer;
+    }
+    
+    .blog_toggle {
+      border-right: 1px solid black;
+      text-align: center;
+    }
+    
+    .projects_toggle {
+      border-left: 1px solid black;
+      text-align: center;
+    }
+    
+    .selected {
+      
+    }
   }
   
   .blog {
-    width: 600px;
+    width: 1000px;
     margin: 10px auto;
     background-color: white;
     border-radius: 3px;
