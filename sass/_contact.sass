@@ -1,0 +1,38 @@
+h1 {
+	text-align: center;
+}
+.contactIntro {
+	text-align: center;
+	margin: 3% 25% 0% 25%;
+}
+.googleButton {
+	background-color: #093F6D;
+	border-radius: 18px;
+	display: inline-block;
+	cursor: pointer;
+	color: #FFFFFF;
+	font-size: 20px;
+	margin: 2% 0% 0% 50%;
+	padding: 30px 50px;
+	text-decoration: none;
+	position: relative;
+}
+.googleButton:hover {
+	background-color: #FFC648;
+	color: #006400;
+}
+.googleButton:after {
+	content: '';
+	width: 0;
+	height: 0;
+	border: 30px solid;
+	text-align: center;
+	position: absolute;
+	border-color: #093F6D transparent transparent #093F6D;
+}
+.googleButton:hover::after {
+	border-color: #FFC648 transparent transparent #FFC648;
+}
+.stickFig {
+	margin: -3% 0% 0% 30%;
+}
