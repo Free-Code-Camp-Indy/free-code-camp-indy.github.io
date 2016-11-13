@@ -1,0 +1,68 @@
+/* Get Involved Section Header */
+.getInvolvedSection h2 {
+	text-align: center;
+	font-family: 'SaxMono','Lato', sans-serif;
+	font-size: 40px;
+	padding-bottom: 40px;
+}
+
+
+/* get involved section titles/buttons */
+button.involvedTitle {
+    background-color: #006400;
+    color: #FFF;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+	font-family: 'Lato', sans-serif;
+	font-size: 24px;
+}
+
+/* Button background color when hovered over*/
+ button.involvedTitle:hover {
+    background-color: #023102;
+}
+
+/* styling of the info box when opened */
+div.involvedBox {
+    padding: 0px 15px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    
+    opacity: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+div.involvedBox .involvedDescription {
+  padding-top: 50px;
+}
+
+
+/* will open/dispaly the get involved method details */
+div.involvedBox.show {
+    opacity: 1;
+    max-height: 400px;
+    padding: 10px;
+    transition: 0.4s ease-in;
+}
+
+/* plus sign that shows on right of involved title box */
+button.involvedTitle:after {
+    content: '+';
+    font-size: 30px;
+    color: #FFF;
+    float: right;
+    margin-left: 5px;
+}
+
+/* changes to minus sign when details are showing and title box is clicked */
+button.involvedTitle.active:after {
+    content: "-";
+    color: orange#FFF;
+    font-size: 30px;
+}
