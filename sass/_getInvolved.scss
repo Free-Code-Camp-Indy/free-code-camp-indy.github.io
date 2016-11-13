@@ -12,19 +12,30 @@ button.involvedTitle {
     background-color: #093F6D;
     color: #FFF;
     cursor: pointer;
-    padding: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
     width: 100%;
     text-align: left;
     border: none;
     outline: none;
     transition: 0.4s;
 	font-family: 'Lato', sans-serif;
-	font-size: 24px;
+    height: 35px;
+    padding-bottom: 0px;
 }
+
+.involvedTitleText {
+    font-size: 24px;
+    vertical-align: middle;
+}
+
+
+
+
 
 /* Button background color when hovered over*/
  button.involvedTitle:hover {
-    background-color: #093F6D;
+    background-color: #052F52;
 }
 
 /* styling of the info box when opened */
@@ -33,13 +44,12 @@ div.involvedBox {
     background-color: white;
     max-height: 0;
     overflow: hidden;
-    
     opacity: 0;
     font-family: 'Lato', sans-serif;
 }
 
 div.involvedBox .involvedDescription {
-  padding-top: 50px;
+    font-size: 20px;
 }
 
 
@@ -54,7 +64,7 @@ div.involvedBox.show {
 /* plus sign that shows on right of involved title box */
 button.involvedTitle:after {
     content: '+';
-    font-size: 30px;
+    font-size: 24px;
     color: #FFF;
     float: right;
     margin-left: 5px;
@@ -64,5 +74,5 @@ button.involvedTitle:after {
 button.involvedTitle.active:after {
     content: "-";
     color: #FFF;
-    font-size: 30px;
+    font-size: 24px;
 }
