@@ -1,78 +1,39 @@
-/* Get Involved Section Header */
-.getInvolvedSection h2 {
-	text-align: center;
-	font-family: 'SaxMono','Lato', sans-serif;
-	font-size: 40px;
-	padding-bottom: 40px;
+.getInvolvedSection {
+    h2 {
+        text-align: center;
+        font-family: SaxMono, monospace;
+        font-size: 48px;
+        padding: 20px;
+    }
 }
 
 
-/* get involved section titles/buttons */
-button.involvedTitle {
-    background-color: #093F6D;
-    color: #FFF;
-    cursor: pointer;
-    padding-left: 10px;
-    padding-right: 10px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-	font-family: 'Lato', sans-serif;
-    height: 35px;
-    padding-bottom: 0px;
+.panel-heading {
+    .panel-title {
+        color: white;
+        font-family: SaxMono, monospace;
+        font-size: 24px;
+    }
+
+    .collapsed:after {
+        content: '+';
+        float: right;
+    }
+
 }
 
-.involvedTitleText {
+.panel-default {
+
+    .panel-heading {
+        background-color:#093F6D;
+    }
+
+    .panel-heading:hover {
+    background-color:#042D4F;
+    }
+}
+
+.panel-body p{
     font-size: 24px;
-    vertical-align: middle;
-}
-
-
-
-
-
-/* Button background color when hovered over*/
- button.involvedTitle:hover {
-    background-color: #052F52;
-}
-
-/* styling of the info box when opened */
-div.involvedBox {
-    padding: 0px 15px;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    opacity: 0;
-    font-family: 'Lato', sans-serif;
-}
-
-div.involvedBox .involvedDescription {
-    font-size: 20px;
-}
-
-
-/* will open/dispaly the get involved method details */
-div.involvedBox.show {
-    opacity: 1;
-    max-height: 400px;
-    padding: 10px;
-    transition: 0.4s ease-in;
-}
-
-/* plus sign that shows on right of involved title box */
-button.involvedTitle:after {
-    content: '+';
-    font-size: 24px;
-    color: #FFF;
-    float: right;
-    margin-left: 5px;
-}
-
-/* changes to minus sign when details are showing and title box is clicked */
-button.involvedTitle.active:after {
-    content: "-";
-    color: #FFF;
-    font-size: 24px;
+    font-family: Lato, Calibri, Optima, Arial, sans-serif;
 }
