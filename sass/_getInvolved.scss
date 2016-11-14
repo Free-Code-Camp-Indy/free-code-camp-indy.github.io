@@ -1,0 +1,39 @@
+.getInvolvedSection {
+    h2 {
+        text-align: center;
+        font-family: SaxMono, monospace;
+        font-size: 48px;
+        padding: 20px;
+    }
+}
+
+
+.panel-heading {
+    .panel-title {
+        color: white;
+        font-family: SaxMono, monospace;
+        font-size: 24px;
+    }
+
+    .collapsed:after {
+        content: '+';
+        float: right;
+    }
+
+}
+
+.panel-default {
+
+    .panel-heading {
+        background-color:#093F6D;
+    }
+
+    .panel-heading:hover {
+    background-color:#042D4F;
+    }
+}
+
+.panel-body p{
+    font-size: 24px;
+    font-family: Lato, Calibri, Optima, Arial, sans-serif;
+}
