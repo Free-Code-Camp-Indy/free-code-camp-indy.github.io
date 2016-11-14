@@ -2,30 +2,32 @@
   text-align: center;
   display: block;
   padding: 20px;
-}
 
-#sponsorSection h2 {
-  font-family: SaxMono;
-  font-size: 62px;
-}
+    h2 {
+      font-family: SaxMono, monospace;
+      font-size: 48px;
+    }
 
-.sponsorLogo img {
- padding: 10px;
-}
-
-#sponsorSection p{
-  font-family: lato;
-  font-size: 24px;
-  padding: 20px;
+    p  {
+      font-family: Lato, Calibri, Optima, Arial, sans-serif;
+      font-size: 24px;
+      padding: 20px;
+    }
 }
 
 .sponsorLogo {
   margin-bottom: 0px;
   padding-bottom: 10px;
-  padding-top:20px;
+  padding-top: 20px;
   display: block;
+
+  img {
+    padding: 10px;
+  }
+
 }
 
-.first-row{
+.first-row {
   padding-bottom: 30px;
+
 }
