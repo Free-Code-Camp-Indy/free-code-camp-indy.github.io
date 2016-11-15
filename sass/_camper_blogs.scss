@@ -1,32 +1,41 @@
-.camper_blogs {
+.campers_page {
   //background-color: $fccred;
   width: 100%;
   min-height: 200px;
-  padding: 5px 100px 25px 100px;
+  padding: 25px 100px;
   
   .subtitle {
-    width: 243px;
-    margin: 0 auto;
+    width: 242px;
+    margin: 0px auto 25px auto;
+    box-sizing: content-box;
     
-    h2 {
+    .toggle {
       display: inline-block;
-      width: 120px;
-      margin: 10px 0px;
-      padding: 0px;
+      width: 100px;
+      box-sizing: content-box;
+      
+      h2 {
+        margin: 0px;
+        padding: 0px;
+      }
     }
     
-    h2:hover {
+    .toggle:hover {
       cursor: pointer;
     }
     
     .blog_toggle {
+      @extend .toggle;
       border-right: 1px solid black;
-      text-align: center;
+      text-align: right;
+      padding: 0px 10px;
     }
     
     .projects_toggle {
+      @extend .toggle;
       border-left: 1px solid black;
-      text-align: center;
+      text-align: left;
+      padding: 0px 10px;
     }
     
     .selected {
@@ -37,6 +46,7 @@
   .blog {
     width: 1000px;
     margin: 10px auto;
+    padding: 10px;
     background-color: white;
     border-radius: 3px;
     border: solid black 2px;
@@ -45,7 +55,7 @@
       display: inline-block;
       width: 120px;
       height: 120px;
-      padding: 10px;
+      padding-right: 10px;
     }
     
     img {
@@ -56,13 +66,16 @@
     
     .blog_description {
       display: inline-block;
-      width: 460px;
-      text-align: center;
+      vertical-align: top;
       
       h3 {
         margin: 0px;
         padding: 0px;
       }
     }
+  }
+  
+  .hidden {
+    display: none;
   }
 }
