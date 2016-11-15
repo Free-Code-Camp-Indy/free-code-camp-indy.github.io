@@ -13,12 +13,12 @@
         color: white;
         font-family: SaxMono, monospace;
         font-size: 24px;
-    }
 
-    .collapsed:after {
-        content: '+';
-        float: right;
     }
+  
+    a:hover {
+        text-decoration: none;
+  }
 
 }
 
@@ -30,10 +30,15 @@
 
     .panel-heading:hover {
     background-color:#042D4F;
+    cursor: pointer;
     }
 }
 
 .panel-body p{
     font-size: 24px;
     font-family: Lato, Calibri, Optima, Arial, sans-serif;
+}
+
+div.panel.panel-default {
+    border: none;
 }
