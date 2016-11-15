@@ -4,14 +4,14 @@ http://free-code-camp-indy.github.io
 
 ## Navigation
 
-[About this Project](#about-this-project) <br>
-[Contribution Guidelines](#contribution-guidelines) <br>
-[The Projects Page (Boards)](#the-projects-page-boards) <br>
-[Prerequisites for running locally](#prerequisites-for-running-locally) <br>
-[Running locally (first time)](#running-locally-first-time) <br>
-[Running locally (all subsequent times)](#running-locally-all-subsequent-times) <br>
-[Including Styles (Sass or CSS)](#including-styles-sass-or-css) <br>
-[Assets](#assets) <br>
+[About this Project](#about-this-project)  
+[Contribution Guidelines](#contribution-guidelines)  
+[The Projects Page (Boards)](#the-projects-page-boards)  
+[Prerequisites for running locally](#prerequisites-for-running-locally)  
+[Running locally (first time)](#running-locally-first-time)  
+[Running locally (all subsequent times)](#running-locally-all-subsequent-times)  
+[Including Styles (Sass or CSS)](#including-styles-sass-or-css)  
+[Assets](#assets)  
 [Credits](#credits)
 
 
@@ -26,7 +26,7 @@ We welcome contributions from local Free Code Camp Indy members.
 Please get in touch with Gwen Faraday if you would like to contribute to this project: __gwenfaraday@gmail.com__
 
 
-## The Projects Page (Boards)
+## The Projects Page (Kanban Boards)
 
 On the [Projects Page](https://github.com/Free-Code-Camp-Indy/free-code-camp-indy.github.io/projects) there are boards to track development. Here is how they work:
 
@@ -37,7 +37,7 @@ On the [Projects Page](https://github.com/Free-Code-Camp-Indy/free-code-camp-ind
 1. **Complete** - When an issue is done it is moved to completed.
 
 
-## Prerequisites for running locally
+## Prerequisites for Running Locally
 
 1. Install [Git](http://git-scm.com) globally locally
 1. Install [Node.js](http://nodejs.org) and NPM globally
@@ -54,23 +54,36 @@ On the [Projects Page](https://github.com/Free-Code-Camp-Indy/free-code-camp-ind
 
 1. Clone down your fork
 
- * Mac Users - Open Terminal
- * Windows Users - Open Command Prompt
- * Type: `git clone https://github.com/Free-Code-Camp-Indy/free-code-camp-indy.github.io fcc-indy` and press enter
- * You now have the project stored in a folder named: `fcc-indy`
+  * **OSX/Linux:**
+    * Open Terminal
+    * `mkdir ~/GitHub`
+    * `cd ~/GitHub`
+    * `git clone https://github.com/Free-Code-Camp-Indy/free-code-camp-indy.github.io fcc-indy`
+    * `cd fcc-indy`
+    * You now have the project stored in : Your User Profile/GitHub/fcc-indy
+  * **Windows:**
+    * Open Command Prompt
+    * `md %USERPROFILE%\Documents\GitHub`
+    * `cd %USERPROFILE%\Documents\GitHub`
+    * `git clone https://github.com/Free-Code-Camp-Indy/free-code-camp-indy.github.io fcc-indy`
+    * `cd fcc-indy`
+    * You now have the project stored in : My Documents\GitHub\fcc-indy
 
-1. Create a new branch named "issue#" based on which issue you are taking, example `issue7` or `issue15`
-1. Open your command prompt/terminal window and `cd` into the cloned down repo
-1. Run: `npm install`
-1. Run: `npm start`
+1. Create a new branch named "issue#", example `issue7` or `issue15`
+  * `git checkout -b issue16 master` (Change `16` to the number that [matches the issue](https://github.com/Free-Code-Camp-Indy/free-code-camp-indy.github.io/issues) you are working on.)
+1. `npm install`
+1. `npm start`
 1. Navigate to [localhost:8000](http://localhost:8000)
 1. Click the livereload icon in your browser to enable it for that page
 
 
 ## Running locally (all subsequent times)
 
-1. Run `npm install` (in case any dependencies have changed)
-1. Run `npm start`
+1. `cd` into the directory:
+  * **OSX/Linux:** `cd ~/GitHub/fcc-indy`
+  * **Windows:** `cd %USERPROFILE%\Documents\GitHub\fcc-indy`
+1. `npm install` (in case any dependencies have changed)
+1. `npm start`
 1. Navigate to [localhost:8000](http://localhost:8000)
 1. Click the livereload icon in your browser to enable it for that page
 
