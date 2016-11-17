@@ -79,3 +79,36 @@
     display: none;
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .campers_page {
+    padding: 25px 0px;
+    
+    .blog {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  
+}
+
+@media screen and (max-width: 768px) {
+  
+}
+
+@media screen and (max-width: 414px) {
+  .campers_page {
+    .blog {
+      .blog_img_container {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  
+}
