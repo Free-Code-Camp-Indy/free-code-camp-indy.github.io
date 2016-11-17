@@ -108,6 +108,7 @@ On the [Projects Page](https://github.com/Free-Code-Camp-Indy/free-code-camp-ind
 ### Developers:
 
 *coming soon...*
+Larry Tooley
 
 ### Advisors:
 
