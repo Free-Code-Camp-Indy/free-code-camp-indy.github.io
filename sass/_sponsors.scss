@@ -1,8 +1,8 @@
-
-border-top: 1px solid black;
-
 #sponsorSection {
 
+  background-color: #F2EFEF;
+  
+  .sponsors {
   max-width: 960px;
 
   text-align: center;
@@ -32,6 +32,7 @@ border-top: 1px solid black;
     .first-row {
       padding-bottom: 30px;
     }
+  }
 }
 
 
