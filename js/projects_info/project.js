@@ -1,7 +1,7 @@
-function project(name, imageLocation, link, description, languages) {
-  this.name = name;
-  this.imageLocation = imageLocation;
-  this.link = link;
-  this.description = description;
-  this.languages = languages;
+function project(params) {
+  this.name = params.name;
+  this.imageLocation = params.imageLocation;
+  this.link = params.link;
+  this.description = params.description;
+  this.languages = params.languages;
 }

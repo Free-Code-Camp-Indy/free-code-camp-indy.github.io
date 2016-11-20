@@ -35,3 +35,18 @@ function build(array, blogs) {
     }
   }
 }
+
+build(blogs, true);
+build(projects, false);
+
+$(".camper_projects").addClass("hidden");
+
+$("#blog_toggle").click(function(){
+  $(".camper_projects").addClass("hidden");
+  $(".camper_blogs").removeClass("hidden");
+});
+
+$("#projects_toggle").click(function(){
+  $(".camper_projects").removeClass("hidden");
+  $(".camper_blogs").addClass("hidden");
+});

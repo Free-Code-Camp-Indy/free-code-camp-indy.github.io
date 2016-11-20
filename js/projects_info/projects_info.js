@@ -1,6 +1,18 @@
 var projects = [];
 
 /* 
-To add a new blog, add a new line in this format: "blogs.push(new blog('blog name', 'blog imageLocation', 'blog_link');"
+To add a new project, add a new item to blogsInfo and push that item to projects.
 */
-projects.push(new project("Gav's Dev Blog", "./images/blog_images/gavs_dev_blog.jpg", "https://gavsdevblog.wordpress.com/", "New Description", ["HTML", "CSS", "JS"]));
+
+var projectsInfo = {
+  'testProject': {
+    'name': "Gav\'s Dev Blog",
+    'imageLocation': './images/blog_images/gavs_dev_blog.jpg',
+    'link': 'https://gavsdevblog.wordpress.com/',
+    'description': "New Description",
+    'languages': ["HTML", "CSS", "JS"]
+  }
+};
+
+
+projects.push(new project(projectsInfo.testProject));

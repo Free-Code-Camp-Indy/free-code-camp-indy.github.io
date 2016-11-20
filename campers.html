@@ -34,22 +34,6 @@
         <script src="./js/projects_info/project.js"></script>
         <script src="./js/projects_info/projects_info.js"></script>
         <script src="./js/campers_build.js"></script>
-        <script>
-          build(blogs, true);
-          build(projects, false);
-          
-          $(".camper_projects").addClass("hidden");
-          
-          $("#blog_toggle").click(function(){
-            $(".camper_projects").addClass("hidden");
-            $(".camper_blogs").removeClass("hidden");
-          });
-          
-          $("#projects_toggle").click(function(){
-            $(".camper_projects").removeClass("hidden");
-            $(".camper_blogs").addClass("hidden");
-          });
-        </script>
       </div>
       <footer class="include" data-include="footer"></footer>
     </div>
