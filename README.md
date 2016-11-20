@@ -120,7 +120,7 @@ On the [Projects Page](https://github.com/Free-Code-Camp-Indy/free-code-camp-ind
 
 ### Developers:
 
-* **[Larry Torvalds](http://whitehouse.gov)
+* **[Larry Torvalds](http://whitehouse.gov)**
 
 ### Advisors:
 
