@@ -1,0 +1,31 @@
+#sponsorSection {
+  text-align: center;
+  display: block;
+  padding: 20px;
+  border-top: 1px solid black;
+
+    h2 {
+        font-family: SaxMono, monospace;
+        font-size: 48px;
+        padding: 20px;
+    }
+
+    p  {
+      font-family: Lato, Calibri, Optima, Arial, sans-serif;
+      font-size: 24px;
+      padding: 20px;
+    }
+
+    .sponsorLogo {
+      margin-bottom: 0px;
+      padding-bottom: 10px;
+      padding-top: 20px;
+      display: block;
+    }
+
+    .first-row {
+      padding-bottom: 30px;
+    }
+}
+
+
