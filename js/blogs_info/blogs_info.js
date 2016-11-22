@@ -52,13 +52,6 @@ var blogsInfo = {
   }
 };
 
-blogs.push(new blog(blogsInfo.loriansBlog));
-blogs.push(new blog(blogsInfo.mckinnelysBlog));
-blogs.push(new blog(blogsInfo.matthewsBlog));
-blogs.push(new blog(blogsInfo.gwensBlog));
-blogs.push(new blog(blogsInfo.nicholasBlog));
-blogs.push(new blog(blogsInfo.gavynsBlog));
-blogs.push(new blog(blogsInfo.jtsBlog));
-blogs.push(new blog(blogsInfo.kimberlysBlog));
-blogs.push(new blog(blogsInfo.larrysBlog));
-
+for (var item in blogsInfo){
+  blogs.push(new blog(blogsInfo[item]));
+}
