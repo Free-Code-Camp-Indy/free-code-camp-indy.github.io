@@ -19,10 +19,10 @@
 	padding: 30px 50px;
 	text-decoration: none;
 	position: relative;
-}
-.googleButton:hover {
+	&:hover {
 	background-color: $fccyellow;
 	color: $fccGreen;
+	}
 }
 .googleButton:after {
 	content: '';
@@ -33,7 +33,7 @@
 	position: absolute;
 	border-color: $fccblue transparent transparent $fccblue;
 }
-.googleButton:hover::after {
+.googleButton:hover:after {
 	border-color: $fccyellow transparent transparent $fccyellow;
 }
 .stickFig {
