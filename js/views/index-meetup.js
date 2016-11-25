@@ -4,7 +4,7 @@
   var numberOfPanelsToDisplay = 3;
   var statusToHumanReadableDict = {
     'past': 'You just missed!',
-    'soon': 'Happening Soon'
+    'upcoming': 'Happening Soon'
   }
   function getHumanReadableStatus(eventStatus) {
     return statusToHumanReadableDict[eventStatus];
