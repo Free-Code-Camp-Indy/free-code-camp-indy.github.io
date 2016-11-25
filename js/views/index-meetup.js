@@ -32,7 +32,8 @@
   $(function () {
     var meetupEventDataRequest = $.getJSON('js/free-code-camp-events.mock.json');
     meetupEventDataRequest.then(function (data) {
-      var topResults = _.take(_.get(data, 'results'), numberOfPanelsToDisplay);
+      var sortedResults = _.sortBy(_.get(data, 'results'), 'time').reverse();
+      var topResults = _.take(sortedResults, numberOfPanelsToDisplay);
       var panels = _.map(topResults, function (event) {
         var eventTitle = _.get(event, 'name');
         var eventStatus = _.get(event, 'status');
