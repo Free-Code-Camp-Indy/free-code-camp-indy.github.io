@@ -121,7 +121,7 @@ The bird's eye view of what we're going to do involves learning a little of how 
     > echo $0
     -zsh  # <-- this is my shell
     ```
-    2. Look for your shell's "rc" file in your home (`~`) directory by running `ls -a ~ | grep "shell name"` replacing `"shell name"` with the shell you identified in step #1.  Example run:
+    2. Look for your shell's "rc" file in your home directory (aka `~`) by running `ls -a ~ | grep "shell name"`, replacing `"shell name"` with the shell you identified in step #1.  Example run:
     ```
     > ls -a ~ | grep "zsh"
     .oh-my-zsh
@@ -130,11 +130,12 @@ The bird's eye view of what we're going to do involves learning a little of how 
     .zshrc  # <-- Here it is!
     ```
     If you do not see a "rc" file for your shell, make one for your shell's type (e.g. `touch ~/.bashrc`).
-    3. Open up the "`.shellrc`" you found in step #2 in a text editor.  Once opened, add `export MEETUP_API_KEY="replace this text with actual key"`.
+    3. Open up the "`.shellrc`" you found in step #2 in a text editor.  Once opened add `export MEETUP_API_KEY="replace this text with actual key"`.
     4. Open a new terminal window.  Test the success of your endeavors by running: `echo $MEETUP_API_KEY`.
 3. Run `npm run generate`.  If you set the `MEETUP_API_KEY` correctly you _should_ not encounter errors.
-4. Feel free to commit the newly generate `free-code-camp-events.mock.json` data if it has been updated.  Make sure you have not committed your API key or else you must *immediately* generate a new key!
+4. Feel free to commit the newly generate `free-code-camp-events.mock.json` data if information has been updated.
 
+Note: Make sure you have not committed and pushed up your API key somehow, or else you must *immediately* generate a new key!
 
 ## Assets
 
