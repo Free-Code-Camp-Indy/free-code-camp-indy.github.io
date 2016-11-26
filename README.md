@@ -110,7 +110,7 @@ Here's how you set up to generate these files.
 3. Run `npm run generate`
 
 #### The Hard Way
-The bird's eye view of what we're going to do involves learning a little of how your terminal works, then what an environment variable is and how to set one.  If you are on Windows you may want to download a UNIX-like shell such as [Cygwin](https://www.cygwin.com/) in order to follow these steps.  Alternatively you can search for powershell or command prompt variations of these scripts.
+The bird's eye view of what we're going to do involves learning a little of how your terminal works, then what an environment variable is and how to set one.  If you are on Windows you may want to download a UNIX-like shell such as [Cygwin](https://www.cygwin.com/) in order to follow these steps.  Alternatively you can search for powershell or command prompt variations of these shell commands.
 
 1. Acquire an API key from Meetup.com by [visiting meetup's api key page](https://secure.meetup.com/meetup_api/key/)
 2. You must then populate a environment variable called `MEETUP_API_KEY` with your API key.
