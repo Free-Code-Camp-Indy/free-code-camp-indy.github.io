@@ -1,12 +1,19 @@
 #!/usr/bin/env node
 var _ = require('lodash');
 var fs = require('fs');
+var sourceKeyFile = 'meetup_api_key.txt';
 var targetFileName = 'free-code-camp-events.mock.json';
 var targetPath = 'js/';
-var meetup_api_key = _.get(process, 'env.MEETUP_API_KEY');
 var targetGroupUrlname = 'Free-Code-Camp-Indy';
 var targetStatus = ['upcoming', 'past'];
-
+var meetup_api_key = (function () {
+  var environmentVariable = _.get(process, 'env.MEETUP_API_KEY');
+  if (!_.isUndefined(environmentVariable)) {
+    return environmentVariable;
+  } else {
+    return fs.readFileSync(sourceKeyFile, 'utf-8').replace(/\s/g,'');
+  }
+})();
 function generateNewMeetupMockData(meetupApiKey) {
   var meetup = require('meetup-api')({key: meetupApiKey});
   return new Promise(function (resolve, reject) {
@@ -14,7 +21,7 @@ function generateNewMeetupMockData(meetupApiKey) {
       if (err) {
         reject(new Error(err));
       } else {
-        // Strip property that has secrets information!
+        // Strip away properties that contain sensitive information
         var results = {
           results: _.get(response, 'results')
         }
@@ -40,11 +47,10 @@ function handleError(error) {
 }
 
 // "main"
-if (_.isUndefined(meetup_api_key)) {
-  var error = new Error('MEETUP_API_KEY environment variable not found.  Please reference the README.md for instructions on how to set this.  Ending script.');
+if (_.isUndefined(meetup_api_key) || _.isEmpty(meetup_api_key)) {
+  var error = new Error('MEETUP_API_KEY not found.  Please reference the README.md for instructions on how to set this up.');
   handleError(error);
 } else {
-  // TODO: Refactor this "callback arrow" antipattern to perhaps use ESNext's `async`/`await` functionality.
   var getMockJson = generateNewMeetupMockData(meetup_api_key);
   getMockJson.then(function (mockJson) {
     var formattedMockJson = JSON.stringify(mockJson, null, 2);

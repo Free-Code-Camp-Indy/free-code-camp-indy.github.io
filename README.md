@@ -100,18 +100,28 @@ On the [Projects Page](https://github.com/Free-Code-Camp-Indy/free-code-camp-ind
   * Import file into `style.sass` file (eg `@import "filename"` - `_` and extension not required)
 
 ## Generate new mock "events" data
-By hosting through git pages we've lost the ability to use a server-side to hide away secret API keys.  You should not commit secret API keys to a public repository. While we figure out a trusted solution (perhaps Lambda?), we must generate data and upload ".mock.json" files using your own API key.  Note: you only have a limited number of API requests before you are shut down.
+By hosting through git pages we've lost the ability to use a server-side to hide away secret API keys.  You should not commit secret API keys to a public repository. While we figure out a trusted solution, we must generate data and upload a ".mock.json" file locally using your own API key.  Note: you only have a limited number of API requests per day so don't send too many requests.
+
+Here's how you set up to generate these files.
+
+#### The Easy Way
+1. Acquire an API key from Meetup.com by [visiting meetup's api key page](https://secure.meetup.com/meetup_api/key/)
+2. Add this key to `meetup_api_key.txt`, a file in the root of this repository
+3. Run `npm run generate`
+
+#### The Hard Way
+The bird's eye view of what we're going to do involves learning a little of how your terminal works, then what an environment variable is and how to set one.  If you are on Windows you may want to download a UNIX-like shell such as [Cygwin](https://www.cygwin.com/) in order to follow these steps.  Alternatively you can search for powershell or command prompt variations of these scripts.
 
 1. Acquire an API key from Meetup.com by [visiting meetup's api key page](https://secure.meetup.com/meetup_api/key/)
-2. You must then populate an environment variable (heretofore ENV) called `MEETUP_API_KEY`.
-  * You can generate this per terminal window by running: `export MEETUP_API_KEY="replace this text with actual key"`.  You can then test this by running `echo $MEETUP_API_KEY` to see the secret value you added.
+2. You must then populate a environment variable called `MEETUP_API_KEY` with your API key.
+  * You can create a temporary environment variable running: `export MEETUP_API_KEY="replace this text with actual key"`.  You can then test this by running `echo $MEETUP_API_KEY` to see the secret value you added.  Once you close your terminal window the variable is destroyed.
   * _Alternatively_ You can more permanently add this to your type of shell (e.g. `bash`, `zsh`)'s "runcom" (abbreviated `rc`) file!
     1. Find out which type of shell you use (most likely `bash`) by running `echo $0`.  Example run:
     ```
     > echo $0
-    -zsh
+    -zsh  # <-- this is my shell
     ```
-    2. Look for your shell's rc file in your home (`~`) directory by running `ls -a ~ | grep "shell name"` replacing `"shell name"` with the shell you identified in step #1.  Example run:
+    2. Look for your shell's "rc" file in your home (`~`) directory by running `ls -a ~ | grep "shell name"` replacing `"shell name"` with the shell you identified in step #1.  Example run:
     ```
     > ls -a ~ | grep "zsh"
     .oh-my-zsh
@@ -119,9 +129,9 @@ By hosting through git pages we've lost the ability to use a server-side to hide
     .zsh_history
     .zshrc  # <-- Here it is!
     ```
-    If you do not see a runcom file for your shell, make one (`touch ~/.shellrc` but replace `shell` with your shell from step #1 e.g. `touch ~/.zshrc`).  Be sure to start the filename with `.`!
-    3. Open up the `.shellrc` you found in step #2 in your favorite editor.  Once you do, find an appropriate spot to add `export MEETUP_API_KEY="replace this text with actual key"`.
-    4. Either open a new terminal tab or run `source ~/.shellrc` (again, replacing `shell` with your shell).  You can then test the success of these operations by running `echo $MEETUP_API_KEY`.
+    If you do not see a "rc" file for your shell, make one for your shell's type (e.g. `touch ~/.bashrc`).
+    3. Open up the "`.shellrc`" you found in step #2 in a text editor.  Once opened, add `export MEETUP_API_KEY="replace this text with actual key"`.
+    4. Open a new terminal window.  Test the success of your endeavors by running: `echo $MEETUP_API_KEY`.
 3. Run `npm run generate`.  If you set the `MEETUP_API_KEY` correctly you _should_ not encounter errors.
 4. Feel free to commit the newly generate `free-code-camp-events.mock.json` data if it has been updated.  Make sure you have not committed your API key or else you must *immediately* generate a new key!
 
