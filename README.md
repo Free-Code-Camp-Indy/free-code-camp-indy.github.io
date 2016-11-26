@@ -106,14 +106,14 @@ Here's how you set up to generate these files.
 
 #### The Easy Way
 1. Acquire an API key from Meetup.com by [visiting meetup's api key page](https://secure.meetup.com/meetup_api/key/)
-2. Add this key to `meetup_api_key.txt`, a file in the root of this repository
-3. Run `npm run generate`
+1. Add this key to `meetup_api_key.txt`, a file you need to create at the root of this repository
+1. Run `npm run generate`
 
 #### The Hard Way
 The bird's eye view of what we're going to do involves learning a little of how your terminal works, then what an environment variable is and how to set one.  If you are on Windows you may want to download a UNIX-like shell such as [Cygwin](https://www.cygwin.com/) in order to follow these steps.  Alternatively you can search for powershell or command prompt variations of these shell commands.
 
 1. Acquire an API key from Meetup.com by [visiting meetup's api key page](https://secure.meetup.com/meetup_api/key/)
-2. You must then populate a environment variable called `MEETUP_API_KEY` with your API key.
+1. You must then populate a environment variable called `MEETUP_API_KEY` with your API key.
   * You can create a temporary environment variable running: `export MEETUP_API_KEY="replace this text with actual key"`.  You can then test this by running `echo $MEETUP_API_KEY` to see the secret value you added.  Once you close your terminal window the variable is destroyed.
   * _Alternatively_ You can more permanently add this to your type of shell (e.g. `bash`, `zsh`)'s "runcom" (abbreviated `rc`) file!
     1. Find out which type of shell you use (most likely `bash`) by running `echo $0`.  Example run:
@@ -121,7 +121,7 @@ The bird's eye view of what we're going to do involves learning a little of how 
     > echo $0
     -zsh  # <-- this is my shell
     ```
-    2. Look for your shell's "rc" file in your home directory (aka `~`) by running `ls -a ~ | grep "shell name"`, replacing `"shell name"` with the shell you identified in step #1.  Example run:
+    1. Look for your shell's "rc" file in your home directory (aka `~`) by running `ls -a ~ | grep "shell name"`, replacing `"shell name"` with the shell you identified in step #1.  Example run:
     ```
     > ls -a ~ | grep "zsh"
     .oh-my-zsh
@@ -130,10 +130,10 @@ The bird's eye view of what we're going to do involves learning a little of how 
     .zshrc  # <-- Here it is!
     ```
     If you do not see a "rc" file for your shell, make one for your shell's type (e.g. `touch ~/.bashrc`).
-    3. Open up the "`.shellrc`" you found in step #2 in a text editor.  Once opened add `export MEETUP_API_KEY="replace this text with actual key"`.
-    4. Open a new terminal window.  Test the success of your endeavors by running: `echo $MEETUP_API_KEY`.
-3. Run `npm run generate`.  If you set the `MEETUP_API_KEY` correctly you _should_ not encounter errors.
-4. Feel free to commit the newly generate `free-code-camp-events.mock.json` data if information has been updated.
+    1. Open up the "`.shellrc`" you found in step #2 in a text editor.  Once opened add `export MEETUP_API_KEY="replace this text with actual key"`.
+    1. Open a new terminal window.  Test the success of your endeavors by running: `echo $MEETUP_API_KEY`.
+1. Run `npm run generate`.  If you set the `MEETUP_API_KEY` correctly you _should_ not encounter errors.
+1. Feel free to commit the newly generate `free-code-camp-events.mock.json` data if information has been updated.
 
 Note: Make sure you have not committed and pushed up your API key somehow, or else you must *immediately* generate a new key!
 
