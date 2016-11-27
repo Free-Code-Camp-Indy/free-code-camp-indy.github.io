@@ -93,12 +93,50 @@ On the [Projects Page](https://github.com/Free-Code-Camp-Indy/free-code-camp-ind
 
   * Save file with a `.sass` extension and precede filename with an `_` (eg `_filename.sass`)
   * Import file into `style.sass` file (eg `@import "filename"` - `_` and extension not required)
-  
+
 1. CSS or SCSS syntax files:
 
   * Save file with a `.scss` extension and precede filename with an `_` (eg `_filename.scss`)
   * Import file into `style.sass` file (eg `@import "filename"` - `_` and extension not required)
-  
+
+## Generate new mock "events" data
+By hosting through git pages we've lost the ability to use a server-side to hide away secret API keys.  You should not commit secret API keys to a public repository. While we figure out a trusted solution, we must generate data and upload a ".mock.json" file locally using your own API key.  Note: you only have a limited number of API requests per day so don't send too many requests.
+
+Here's how you set up to generate these files.
+
+#### The Easy Way
+1. Acquire an API key from Meetup.com by [visiting meetup's api key page](https://secure.meetup.com/meetup_api/key/)
+1. Add this key to `meetup_api_key.txt`, a file you need to create at the root of this repository
+1. Run `npm run generate`
+
+#### The Hard Way
+The bird's eye view of what we're going to do involves learning a little of how your terminal works, then what an environment variable is and how to set one.  If you are on Windows you may want to download a UNIX-like shell such as [Cygwin](https://www.cygwin.com/) in order to follow these steps.  Alternatively you can search for powershell or command prompt variations of these shell commands.
+
+1. Acquire an API key from Meetup.com by [visiting meetup's api key page](https://secure.meetup.com/meetup_api/key/)
+1. You must then populate a environment variable called `MEETUP_API_KEY` with your API key.
+  * You can create a temporary environment variable running: `export MEETUP_API_KEY="replace this text with actual key"`.  You can then test this by running `echo $MEETUP_API_KEY` to see the secret value you added.  Once you close your terminal window the variable is destroyed.
+  * _Alternatively_ You can more permanently add this to your type of shell (e.g. `bash`, `zsh`)'s "runcom" (abbreviated `rc`) file!
+    1. Find out which type of shell you use (most likely `bash`) by running `echo $0`.  Example run:
+    ```
+    > echo $0
+    -zsh  # <-- this is my shell
+    ```
+    1. Look for your shell's "rc" file in your home directory (aka `~`) by running `ls -a ~ | grep "shell name"`, replacing `"shell name"` with the shell you identified in step #1.  Example run:
+    ```
+    > ls -a ~ | grep "zsh"
+    .oh-my-zsh
+    .zsh-update
+    .zsh_history
+    .zshrc  # <-- Here it is!
+    ```
+    If you do not see a "rc" file for your shell, make one for your shell's type (e.g. `touch ~/.bashrc`).
+    1. Open up the "`.shellrc`" you found in step #2 in a text editor.  Once opened add `export MEETUP_API_KEY="replace this text with actual key"`.
+    1. Open a new terminal window.  Test the success of your endeavors by running: `echo $MEETUP_API_KEY`.
+1. Run `npm run generate`.  If you set the `MEETUP_API_KEY` correctly you _should_ not encounter errors.
+1. Feel free to commit the newly generate `free-code-camp-events.mock.json` data if information has been updated.
+
+Note: Make sure you have not committed and pushed up your API key somehow, or else you must *immediately* generate a new key!
+
 ## Assets
 
 [Google Drive](https://drive.google.com/drive/u/2/folders/0Bx3Axcu05dYsQW1raUFCSGM1Vzg) - *May have to request access*
@@ -108,7 +146,7 @@ On the [Projects Page](https://github.com/Free-Code-Camp-Indy/free-code-camp-ind
 
 ### Team Leader/Developer:
 
-**[Matt Albright](https://github.com/orgs/Free-Code-Camp-Indy/people/mattattaq)**
+**[Matt Allbright](https://github.com/orgs/Free-Code-Camp-Indy/people/mattattaq)**
 
 ### Project Manager:
 
@@ -121,6 +159,7 @@ On the [Projects Page](https://github.com/Free-Code-Camp-Indy/free-code-camp-ind
 ### Developers:
 
 * **[Larry Torvalds](http://whitehouse.gov)**
+* **[Andrew Allbright](https://github.com/aallbrig)**
 
 ### Advisors:
 
