@@ -23,7 +23,8 @@ gulp.task('uglify', function () {
         .on('error', errorLog)
         .pipe(insert.append('\n'))
         .pipe(crlf({eolc:'CRLF', encoding:'utf8'}))
-        .pipe(gulp.dest('scripts'));
+        .pipe(gulp.dest('scripts'))
+        .pipe(livereload());
 });
 
 // Create expanded and .min versions of Sass styles in the _styles folder as CSS
@@ -62,17 +63,17 @@ gulp.task('serve', function (done) {
 // Enable live reload listening from HTML files in the browser
 // if you have the LiveReload browser extension installed.
 gulp.task('html', function () {
-    gulp.src('*.html')
+    gulp.src('**/*.html')
         .pipe(livereload());
 });
 
 // Watch for changes in JS, Sass, and HTML files, then Lint,
 // Uglify, Process the Sass, and reload the browser automatically
 gulp.task('watch', function () {
-    gulp.watch('js/*.js', ['lint']);
-    gulp.watch('js/*.js', ['uglify']);
-    gulp.watch('sass/*', ['sass']);
-    gulp.watch('*.html', ['html']);
+    gulp.watch('js/**/*.js', ['lint']);
+    gulp.watch('js/**/*.js', ['uglify']);
+    gulp.watch('sass/**/*', ['sass']);
+    gulp.watch('**/*.html', ['html']);
 
     livereload.listen();
 });
