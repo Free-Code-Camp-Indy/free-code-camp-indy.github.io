@@ -1,0 +1,371 @@
+{
+  "results": [
+    {
+      "utc_offset": -14400000,
+      "headcount": 6,
+      "visibility": "public",
+      "waitlist_count": 0,
+      "created": 1464019817000,
+      "rating": {
+        "count": 1,
+        "average": 5
+      },
+      "maybe_rsvp_count": 0,
+      "description": "<p>We are hosting another code and coffee at The Quirky Feather. It runs from about 3:30PM until everyone leaves (usually around 5:30 or 6).</p>",
+      "event_url": "https://www.meetup.com/Free-Code-Camp-Indy/events/231339488/",
+      "yes_rsvp_count": 8,
+      "name": "Code n' Coffee",
+      "id": "231339488",
+      "time": 1464550200000,
+      "updated": 1464573704000,
+      "group": {
+        "join_mode": "open",
+        "created": 1463953200000,
+        "name": "Free Code Camp Indy",
+        "group_lon": -86.16000366210938,
+        "id": 19983515,
+        "urlname": "Free-Code-Camp-Indy",
+        "group_lat": 39.77000045776367,
+        "who": "Campers"
+      },
+      "status": "past"
+    },
+    {
+      "utc_offset": -14400000,
+      "venue": {
+        "country": "us",
+        "localized_country_name": "USA",
+        "city": "Indianapolis",
+        "address_1": "6800 E 30th Street, Suite OS500",
+        "name": "Club Cyberia",
+        "lon": -86.05143,
+        "id": 24617459,
+        "state": "IN",
+        "lat": 39.812141,
+        "repinned": false
+      },
+      "headcount": 16,
+      "visibility": "public",
+      "waitlist_count": 0,
+      "created": 1466137647000,
+      "rating": {
+        "count": 4,
+        "average": 5
+      },
+      "maybe_rsvp_count": 0,
+      "description": "<p>Club Cyberia has offered to let us use their facilities for our meetings. This will allow us a more private space and give us the opportunity to have different kinds of events.</p> <p>For the first 45 minutes, we will discuss getting hired both from an employee and employers perspective.</p> <p>After that we will have about an hour for questions and getting help on any part of the free code camp curriculum.</p> <p>Since I'm sure a lot of people are coming from work, we will have pizza and drinks for whoever wants.</p>",
+      "event_url": "https://www.meetup.com/Free-Code-Camp-Indy/events/231958293/",
+      "yes_rsvp_count": 22,
+      "duration": 7200000,
+      "name": "Getting a Job - How to Plan and Get Hired as a Web Developer",
+      "id": "231958293",
+      "time": 1467239400000,
+      "updated": 1467690558000,
+      "group": {
+        "join_mode": "open",
+        "created": 1463953200000,
+        "name": "Free Code Camp Indy",
+        "group_lon": -86.16000366210938,
+        "id": 19983515,
+        "urlname": "Free-Code-Camp-Indy",
+        "group_lat": 39.77000045776367,
+        "who": "Campers"
+      },
+      "status": "past"
+    },
+    {
+      "utc_offset": -14400000,
+      "venue": {
+        "country": "us",
+        "localized_country_name": "USA",
+        "city": "Indianapolis",
+        "address_1": "6800 E 30th Street, Suite OS500",
+        "name": "Club Cyberia",
+        "lon": -86.05143,
+        "id": 24617459,
+        "state": "IN",
+        "lat": 39.812141,
+        "repinned": false
+      },
+      "headcount": 18,
+      "visibility": "public",
+      "waitlist_count": 0,
+      "created": 1468510635000,
+      "rating": {
+        "count": 4,
+        "average": 4.25
+      },
+      "maybe_rsvp_count": 0,
+      "description": "<p>Come and learn how to create a developer blog to track your progress and market yourself online.</p> <p>From 6:30-7:00 we will discuss the benefits of having a developer blog.</p> <p>From 7:00-7:30 each person will be able to easily create their own blog and write their first post to get started.</p> <p>Food and drinks provided by Ion Three.</p>",
+      "event_url": "https://www.meetup.com/Free-Code-Camp-Indy/events/232615779/",
+      "yes_rsvp_count": 21,
+      "name": "How to create a developer blog and market yourself online.",
+      "id": "232615779",
+      "time": 1470263400000,
+      "updated": 1470331155000,
+      "group": {
+        "join_mode": "open",
+        "created": 1463953200000,
+        "name": "Free Code Camp Indy",
+        "group_lon": -86.16000366210938,
+        "id": 19983515,
+        "urlname": "Free-Code-Camp-Indy",
+        "group_lat": 39.77000045776367,
+        "who": "Campers"
+      },
+      "status": "past"
+    },
+    {
+      "utc_offset": -14400000,
+      "venue": {
+        "country": "us",
+        "localized_country_name": "USA",
+        "city": "Indianapolis",
+        "address_1": "6800 E 30th Street, Suite OS500",
+        "name": "Club Cyberia",
+        "lon": -86.05143,
+        "id": 24617459,
+        "state": "IN",
+        "lat": 39.812141,
+        "repinned": false
+      },
+      "headcount": 0,
+      "visibility": "public",
+      "waitlist_count": 0,
+      "created": 1469978526000,
+      "rating": {
+        "count": 3,
+        "average": 5
+      },
+      "maybe_rsvp_count": 0,
+      "description": "<p>Join us as we discuss: how to avoid the pitfalls of writing CSS; how browsers understand the CSS stack; how to work WITH CSS selector specificity and not against it; the Inverted Triangle CSS Methodology; and touch on Sass project management. BEGINNERS WELCOME! </p> <p>This talk will be given by The Jared Wilcurt. He's the creator of Scout-App 2 (<a href=\"http://scout-app.io\">scout-app.io</a>), a cross-platform desktop application that processes Sass files into CSS; and works as a UI Engineer for Salesforce.</p>",
+      "event_url": "https://www.meetup.com/Free-Code-Camp-Indy/events/233012739/",
+      "yes_rsvp_count": 28,
+      "name": "Upgrading your CSS",
+      "id": "233012739",
+      "time": 1473287400000,
+      "updated": 1473681054000,
+      "group": {
+        "join_mode": "open",
+        "created": 1463953200000,
+        "name": "Free Code Camp Indy",
+        "group_lon": -86.16000366210938,
+        "id": 19983515,
+        "urlname": "Free-Code-Camp-Indy",
+        "group_lat": 39.77000045776367,
+        "who": "Campers"
+      },
+      "status": "past"
+    },
+    {
+      "utc_offset": -14400000,
+      "venue": {
+        "country": "us",
+        "localized_country_name": "USA",
+        "city": "Indianapolis",
+        "address_1": "475 E Market St",
+        "name": "The Iron Yard",
+        "lon": 0,
+        "id": 24804006,
+        "state": "IN",
+        "lat": 0,
+        "repinned": false
+      },
+      "headcount": 0,
+      "visibility": "public",
+      "waitlist_count": 0,
+      "created": 1474573939000,
+      "rating": {
+        "count": 3,
+        "average": 4.670000076293945
+      },
+      "maybe_rsvp_count": 0,
+      "description": "<p>Hack-a-thons are an amazing experience to connect with other coders, learn to build things together, and come out with some cool apps and ideas.</p> <p>This is a beginner friendly mini-hack-a-thon for coders of all skill levels (designers are welcome too).</p> <p>We will be meeting at the Iron yard at 2pm.<br/>We will choose from random topics and then form teams.<br/>At 6pm, there will be a coding freeze and everyone will show what they made.</p> <p>**Please bring a laptop for this event**</p> <p>Location and food are provided by <b>The Iron Yard</b>.</p>",
+      "event_url": "https://www.meetup.com/Free-Code-Camp-Indy/events/234330061/",
+      "yes_rsvp_count": 16,
+      "duration": 14400000,
+      "name": "Mini-Hack-Day",
+      "id": "234330061",
+      "time": 1475431200000,
+      "updated": 1475578341000,
+      "group": {
+        "join_mode": "open",
+        "created": 1463953200000,
+        "name": "Free Code Camp Indy",
+        "group_lon": -86.16000366210938,
+        "id": 19983515,
+        "urlname": "Free-Code-Camp-Indy",
+        "group_lat": 39.77000045776367,
+        "who": "Campers"
+      },
+      "status": "past"
+    },
+    {
+      "utc_offset": -14400000,
+      "venue": {
+        "country": "us",
+        "localized_country_name": "USA",
+        "city": "Indianapolis",
+        "address_1": "6800 E 30th Street, Suite OS500",
+        "name": "Club Cyberia",
+        "lon": -86.05143,
+        "id": 24617459,
+        "state": "IN",
+        "lat": 39.812141,
+        "repinned": false
+      },
+      "headcount": 0,
+      "visibility": "public",
+      "waitlist_count": 0,
+      "created": 1470171878000,
+      "rating": {
+        "count": 0,
+        "average": 0
+      },
+      "maybe_rsvp_count": 0,
+      "description": "<p>Freelancer Kim Sharpe will give a detailed talk on how she got started freelancing and how it has benefited her. </p> <p>Here what you will learn: </p> <p>• How to get started freelancing and working for yourself </p> <p>• Inside techniques on how to find great clients </p> <p>• Free ways to gain valuable new skills </p> <p>• Embarrassing failures you don't want to repeat </p> <p>Everyone is welcome regardless of industry or skill level!</p> <p>*Meeting starts at 6 for food and networking, talk begins at 6:30.</p>",
+      "event_url": "https://www.meetup.com/Free-Code-Camp-Indy/events/233070284/",
+      "yes_rsvp_count": 30,
+      "name": "How to be Successful at Freelancing",
+      "id": "233070284",
+      "time": 1475704800000,
+      "updated": 1475717451000,
+      "group": {
+        "join_mode": "open",
+        "created": 1463953200000,
+        "name": "Free Code Camp Indy",
+        "group_lon": -86.16000366210938,
+        "id": 19983515,
+        "urlname": "Free-Code-Camp-Indy",
+        "group_lat": 39.77000045776367,
+        "who": "Campers"
+      },
+      "status": "past"
+    },
+    {
+      "utc_offset": -14400000,
+      "venue": {
+        "country": "us",
+        "localized_country_name": "USA",
+        "city": "Indianapolis",
+        "address_1": "719 Virginia Ave., Suite 101",
+        "name": "The Bureau ",
+        "lon": -86.145554,
+        "id": 22405842,
+        "state": "IN",
+        "lat": 39.757114,
+        "repinned": false
+      },
+      "headcount": 0,
+      "visibility": "public",
+      "waitlist_count": 0,
+      "created": 1476393315000,
+      "rating": {
+        "count": 0,
+        "average": 0
+      },
+      "maybe_rsvp_count": 0,
+      "description": "<p>How fast does your website load? If you are responsible for publishing and maintaining content for your organization’s website the answer to this question greatly depends on your strategy for web performance. Good web performance is a key trait in attracting new and returning visitors, and it’s also a factor in how search engines index websites for search. In this introductory class on web performance you will learn why web performance matters, how to use free tools to gain insights into the size and performance of your website, and learn about some simple and effective techniques for optimizing your content for blazing speeds. This class is introductory and accessible to all skill levels!</p> <p>Food will be provided by Ion Three from 6pm. Talk will begin at 6:30.</p>",
+      "event_url": "https://www.meetup.com/Free-Code-Camp-Indy/events/234838927/",
+      "yes_rsvp_count": 30,
+      "duration": 3600000,
+      "name": "Website Optimization",
+      "id": "234838927",
+      "time": 1478125800000,
+      "updated": 1478130883000,
+      "group": {
+        "join_mode": "open",
+        "created": 1463953200000,
+        "name": "Free Code Camp Indy",
+        "group_lon": -86.16000366210938,
+        "id": 19983515,
+        "urlname": "Free-Code-Camp-Indy",
+        "group_lat": 39.77000045776367,
+        "who": "Campers"
+      },
+      "status": "past"
+    },
+    {
+      "utc_offset": -18000000,
+      "venue": {
+        "country": "us",
+        "localized_country_name": "USA",
+        "city": "Indianapolis",
+        "address_1": "475 E Market St",
+        "name": "The Iron Yard",
+        "lon": 0,
+        "id": 24804006,
+        "state": "IN",
+        "lat": 0,
+        "repinned": false
+      },
+      "headcount": 0,
+      "visibility": "public",
+      "waitlist_count": 0,
+      "created": 1476392168000,
+      "rating": {
+        "count": 0,
+        "average": 0
+      },
+      "maybe_rsvp_count": 0,
+      "description": "<p>This month we will be learning the basics of source control with Git. Git allows you to collaborate with others and maintain a safe source for your source code. </p> <p>We will learn: <br/>* What is source control? <br/>* What is Git/Github? <br/>* Why and how should you use it? </p> <p>** Please bring your laptop.</p> <p>Parking: Street Parking around The Iron Yard<br/>Food: No food is supplied for this event<br/>Drinks: There are some drinks in the fridge.</p>",
+      "event_url": "https://www.meetup.com/Free-Code-Camp-Indy/events/234838600/",
+      "yes_rsvp_count": 16,
+      "duration": 3600000,
+      "name": "Intro to Git/Github",
+      "id": "234838600",
+      "time": 1479339000000,
+      "updated": 1479344115000,
+      "group": {
+        "join_mode": "open",
+        "created": 1463953200000,
+        "name": "Free Code Camp Indy",
+        "group_lon": -86.16000366210938,
+        "id": 19983515,
+        "urlname": "Free-Code-Camp-Indy",
+        "group_lat": 39.77000045776367,
+        "who": "Campers"
+      },
+      "status": "past"
+    },
+    {
+      "utc_offset": -18000000,
+      "venue": {
+        "country": "us",
+        "localized_country_name": "USA",
+        "city": "Indianapolis",
+        "address_1": "6161 Hillside Ave",
+        "name": "The Hatch",
+        "lon": -86.124252,
+        "id": 24836853,
+        "state": "IN",
+        "lat": 39.867767,
+        "repinned": false
+      },
+      "headcount": 0,
+      "visibility": "public",
+      "waitlist_count": 0,
+      "created": 1476108426000,
+      "maybe_rsvp_count": 0,
+      "description": "<p>Rob Bohn will be speaking and giving his insights on the plethora of tools, languages, frameworks, and techniques used in modern web development.</p> <p>This will be of interest to beginners as well as experienced programmers who are new to web development.</p> <p>Arrive at 6pm for food, provided by Ion Three, and socializing. Talk will begin at 6:30.</p> <p>**Please bring your laptop if you have one.</p>",
+      "event_url": "https://www.meetup.com/Free-Code-Camp-Indy/events/234753630/",
+      "yes_rsvp_count": 27,
+      "duration": 3600000,
+      "name": "A Whirlwind Tour of Web Development Basics",
+      "id": "234753630",
+      "time": 1481153400000,
+      "updated": 1476760299000,
+      "group": {
+        "join_mode": "open",
+        "created": 1463953200000,
+        "name": "Free Code Camp Indy",
+        "group_lon": -86.16000366210938,
+        "id": 19983515,
+        "urlname": "Free-Code-Camp-Indy",
+        "group_lat": 39.77000045776367,
+        "who": "Campers"
+      },
+      "status": "upcoming"
+    }
+  ]
+}

@@ -1,16 +1,49 @@
-.camper_blogs {
+.campers_page {
   //background-color: $fccred;
   width: 100%;
   min-height: 200px;
-  padding: 5px 100px 25px 100px;
+  padding: 25px 100px;
   
-  h2 {
-    text-align: center;
+  .subtitle {
+    width: 242px;
+    margin: 0px auto 25px auto;
+    box-sizing: content-box;
+    font-size: 0px;
+    
+    .toggle {
+      display: inline-block;
+      width: 100px;
+      box-sizing: content-box;
+      
+      h2 {
+        margin: 0px;
+        padding: 0px;
+      }
+      
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    
+    .blog_toggle {
+      @extend .toggle;
+      border-right: 1px solid black;
+      text-align: right;
+      padding: 0px 10px;
+    }
+    
+    .projects_toggle {
+      @extend .toggle;
+      border-left: 1px solid black;
+      text-align: left;
+      padding: 0px 10px;
+    }
   }
   
   .blog {
-    width: 600px;
+    width: 1000px;
     margin: 10px auto;
+    padding: 10px;
     background-color: white;
     border-radius: 3px;
     border: solid black 2px;
@@ -19,7 +52,7 @@
       display: inline-block;
       width: 120px;
       height: 120px;
-      padding: 10px;
+      padding-right: 10px;
     }
     
     img {
@@ -30,8 +63,7 @@
     
     .blog_description {
       display: inline-block;
-      width: 460px;
-      text-align: center;
+      vertical-align: top;
       
       h3 {
         margin: 0px;
@@ -39,4 +71,41 @@
       }
     }
   }
+  
+  .hidden {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .campers_page {
+    padding: 25px 0px;
+    
+    .blog {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  
+}
+
+@media screen and (max-width: 768px) {
+  
+}
+
+@media screen and (max-width: 414px) {
+  .campers_page {
+    .blog {
+      .blog_img_container {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  
 }
