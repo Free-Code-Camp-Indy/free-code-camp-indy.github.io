@@ -18,29 +18,23 @@
       <div class="include" data-include="header">
       </div>
       <div id="content" >
-        <div class="camper_blogs">
+        <div class="campers_page">
           <div class="subtitle">
-            <h2>Blogs and Projects</h2>
+            <div class="blog_toggle" id="blog_toggle"><h2>Blogs</h2></div>
+            <div class="projects_toggle" id="projects_toggle"><h2>Projects</h2></div>
+          </div>
+          <div class="camper_blogs">
+            
+          </div>
+          <div class="camper_projects">
+            
           </div>
         </div>
         <script src="./js/blogs_info/blog.js"></script>
         <script src="./js/blogs_info/blogs_info.js"></script>
-        <script>
-          for (var i = 0; i < blogs.length; i++){
-            var blogDiv = $("<div>", {class: "blog"});
-            var imageDiv = $("<div>", {class: "blog_img_container"});
-            var blogDescription = $("<div>", {class: "blog_description"});
-
-            imageDiv.append($("<img>", {class: "blog_img", src: blogs[i].imageLocation, alt: "blog title"}));
-            blogDescription.append($("<h3>").text(blogs[i].name));
-            blogDescription.append($("<a>", {href: blogs[i].link, target: "_blank"}).text(blogs[i].link));
-
-            blogDiv.append(imageDiv);
-            blogDiv.append(blogDescription);
-
-            $(".camper_blogs").append(blogDiv);
-          }
-        </script>
+        <script src="./js/projects_info/project.js"></script>
+        <script src="./js/projects_info/projects_info.js"></script>
+        <script src="./js/campers_build.js"></script>
       </div>
       <footer class="include" data-include="footer"></footer>
     </div>
