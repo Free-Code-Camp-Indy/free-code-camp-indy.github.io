@@ -10,7 +10,7 @@ var projectsInfo = {
     'imageLocation': './images/blog_images/gavs_dev_blog.jpg',
     'link': 'https://gavsdevblog.wordpress.com/',
     'description': "New Description",
-    'languages': ["HTML", "CSS", "JS"]
+    'languages': ["html5", "css3", "javascript"]
   }
 };
 
