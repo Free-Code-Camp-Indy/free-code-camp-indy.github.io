@@ -70,6 +70,11 @@
         padding: 0px;
       }
     }
+    
+    .language_icon {
+      font-size: 35px;
+      padding-right: 5px;
+    }
   }
   
   .hidden {
@@ -102,10 +107,14 @@
         width: 60px;
         height: 60px;
       }
+      
+      .language_icon {
+        font-size: 20px
+      }
     }
   }
 }
 
 @media screen and (max-width: 320px) {
-  
+
 }

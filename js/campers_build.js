@@ -24,7 +24,7 @@ function build(array, isBlogs) {
       }
       else if (key === "languages") {
         for (var item in array[i].languages){
-          itemDescription.append($("<span>", {class: "devicon-" + array[i].languages[item] + "-plain"}));
+          itemDescription.append($("<span>", {class: "devicon-" + array[i].languages[item] + "-plain language_icon"}));
         }
       }
     }
