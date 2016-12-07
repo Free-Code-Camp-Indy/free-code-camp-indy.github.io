@@ -1,6 +1,6 @@
 # FCC Indy Website
 
-http://freecodecampindy.come
+http://freecodecampindy.com
 
 ## Navigation
 
