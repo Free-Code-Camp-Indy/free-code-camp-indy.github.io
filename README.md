@@ -1,6 +1,6 @@
 # FCC Indy Website
 
-http://free-code-camp-indy.github.io
+http://freecodecampindy.come
 
 ## Navigation
 
@@ -154,7 +154,7 @@ Note: Make sure you have not committed and pushed up your API key somehow, or el
 
 ### Designers:
 
-*coming soon...*
+* **[Tara Ree Miller](https://github.com/tararee)**
 
 ### Developers:
 
