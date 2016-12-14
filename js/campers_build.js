@@ -6,19 +6,19 @@ function build(array, isBlogs) {
     
     for (var key in array[i]) {
       if (key === "name") {
-        itemDescription.append($("<h3>").text(array[i].name));
+        itemDescription.append($("<h3>").append($("<a>", {href: array[i].link, target: "_blank"}).text(array[i].name)));
       }
       else if (key === "imageLocation") {
         imageDiv.append($("<img>", {class: "blog_img", src: array[i][key], alt: "blog title"}));
       }
-      else if (key === "link") {
+      /*else if (key === "link") {
         if (isBlogs) {
           itemDescription.append($("<a>", {href: array[i].link, target: "_blank"}).text("Link to Blog"));
         }
         else {
           itemDescription.append($("<a>", {href: array[i].link, target: "_blank"}).text("Link to Project"));
         }
-      }
+      }*/
       else if (key === "description") {
         itemDescription.append($("<p>").text(array[i][key]));
       }
@@ -45,13 +45,18 @@ build(blogs, true);
 build(projects, false);
 
 $(".camper_projects").addClass("hidden");
+$("#blog_toggle").addClass("active");
 
 $("#blog_toggle").click(function(){
+  $(".active").removeClass("active");
+  $(this).addClass("active");
   $(".camper_projects").addClass("hidden");
   $(".camper_blogs").removeClass("hidden");
 });
 
 $("#projects_toggle").click(function(){
+  $(".active").removeClass("active");
+  $(this).addClass("active");
   $(".camper_projects").removeClass("hidden");
   $(".camper_blogs").addClass("hidden");
 });

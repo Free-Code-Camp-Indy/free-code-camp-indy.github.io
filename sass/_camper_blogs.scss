@@ -20,8 +20,13 @@
         padding: 0px;
       }
       
+      &.active {
+        color: $fccyellow;
+      }
+      
       &:hover {
         cursor: pointer;
+        color: $fccyellow;
       }
     }
     
