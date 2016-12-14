@@ -11,14 +11,6 @@ function build(array, isBlogs) {
       else if (key === "imageLocation") {
         imageDiv.append($("<img>", {class: "blog_img", src: array[i][key], alt: "blog title"}));
       }
-      /*else if (key === "link") {
-        if (isBlogs) {
-          itemDescription.append($("<a>", {href: array[i].link, target: "_blank"}).text("Link to Blog"));
-        }
-        else {
-          itemDescription.append($("<a>", {href: array[i].link, target: "_blank"}).text("Link to Project"));
-        }
-      }*/
       else if (key === "description") {
         itemDescription.append($("<p>").text(array[i][key]));
       }
