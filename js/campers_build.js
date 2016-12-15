@@ -1,4 +1,4 @@
-function build(array, blogs) {
+function build(array, isBlogs) {
   for (var i = 0; i < array.length; i++){
     var div = $("<div>", {class: "blog"});
     var imageDiv = $("<div>", {class: "blog_img_container"});
@@ -12,14 +12,19 @@ function build(array, blogs) {
         imageDiv.append($("<img>", {class: "blog_img", src: array[i][key], alt: "blog title"}));
       }
       else if (key === "link") {
-        itemDescription.append($("<a>", {href: array[i].link, target: "_blank"}).text(array[i][key]));
+        if (isBlogs) {
+          itemDescription.append($("<a>", {href: array[i].link, target: "_blank"}).text("Link to Blog"));
+        }
+        else {
+          itemDescription.append($("<a>", {href: array[i].link, target: "_blank"}).text("Link to Project"));
+        }
       }
       else if (key === "description") {
         itemDescription.append($("<p>").text(array[i][key]));
       }
       else if (key === "languages") {
         for (var item in array[i].languages){
-          itemDescription.append($("<p>").text(array[i].languages[item]));
+          itemDescription.append($("<span>", {class: "devicon-" + array[i].languages[item] + "-plain language_icon"}));
         }
       }
     }
@@ -27,7 +32,7 @@ function build(array, blogs) {
     div.append(imageDiv);
     div.append(itemDescription);
     
-    if (blogs) {
+    if (isBlogs) {
       $(".camper_blogs").append(div);
     }
     else {
