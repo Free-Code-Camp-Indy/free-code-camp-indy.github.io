@@ -1,8 +1,13 @@
 #sponsorSection {
-  text-align: center;
-  display: block;
-  padding: 20px;
-  border-top: 1px solid black;
+
+  background-color: #F2EFEF;
+  
+  .sponsors {
+    max-width: 960px;
+    text-align: center;
+    display: block;
+    padding: 20px;
+  
 
     h2 {
         font-family: SaxMono, monospace;
@@ -26,6 +31,7 @@
     .first-row {
       padding-bottom: 30px;
     }
+  }
 }
 
 
