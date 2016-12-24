@@ -5,6 +5,7 @@ function build(array, isBlogs) {
     var itemDescription = $("<div>", {class: "blog_description"});
     
     for (var key in array[i]) {
+      console.log(key);
       if (key === "name") {
         itemDescription.append($("<h3>").append($("<a>", {href: array[i].link, target: "_blank"}).text(array[i].name)));
       }
@@ -14,9 +15,9 @@ function build(array, isBlogs) {
       else if (key === "description") {
         itemDescription.append($("<p>").text(array[i][key]));
       }
-      else if (key === "languages") {
-        for (var item in array[i].languages){
-          itemDescription.append($("<span>", {class: "devicon-" + array[i].languages[item] + "-plain language_icon"}));
+      else if (key === "techStack") {
+        for (var item in array[i].techStack){
+          itemDescription.append($("<span>", {class: "devicon-" + array[i].techStack[item] + "-plain language_icon"}));
         }
       }
     }
