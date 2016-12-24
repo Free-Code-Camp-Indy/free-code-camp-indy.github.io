@@ -160,6 +160,8 @@ Note: Make sure you have not committed and pushed up your API key somehow, or el
 
 * **[Larry Torvalds](http://whitehouse.gov)**
 * **[Andrew Allbright](https://github.com/aallbrig)**
+* **[Gavyn Leavitt](https://github.com/Firearrow5235)**
+* **[Mark Loeser](https://github.com/MarkLoeser)**
 
 ### Advisors:
 
