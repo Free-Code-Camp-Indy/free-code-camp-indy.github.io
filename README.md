@@ -144,25 +144,25 @@ Note: Make sure you have not committed and pushed up your API key somehow, or el
 
 ## Credits
 
-### Team Leader/Developer:
+* __Team Leader/Developer:__
 
-**[Matt Allbright](https://github.com/orgs/Free-Code-Camp-Indy/people/mattattaq)**
+ * [Matt Allbright](https://github.com/orgs/Free-Code-Camp-Indy/people/mattattaq)
 
-### Project Manager:
+* __Project Manager:__
 
-**[Gwen Faraday](https://github.com/gwenf)**
+ * [Gwen Faraday](https://github.com/gwenf)
 
-### Designers:
+* __Designers:__
 
-* **[Tara Ree Miller](https://github.com/tararee)**
+ * [Tara Ree Miller](https://github.com/tararee)
 
-### Developers:
+* __Developers:__
 
-* **[Larry Torvalds](http://whitehouse.gov)**
-* **[Andrew Allbright](https://github.com/aallbrig)**
-* **[Gavyn Leavitt](https://github.com/Firearrow5235)**
-* **[Mark Loeser](https://github.com/MarkLoeser)**
+ * [Larry Torvalds](http://whitehouse.gov)
+ * [Andrew Allbright](https://github.com/aallbrig)
+ * [Gavyn Leavitt](https://github.com/Firearrow5235)
+ * [Mark Loeser](https://github.com/MarkLoeser)
 
-### Advisors:
+* __Advisors:__
 
-* **[The Jared Wilcurt](https://github.com/TheJaredWilcurt)**
+ * [The Jared Wilcurt](https://github.com/TheJaredWilcurt)
