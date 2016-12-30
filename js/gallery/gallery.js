@@ -1,0 +1,1 @@
+$('.grid').masonry( { itemSelector: '.item' } );
