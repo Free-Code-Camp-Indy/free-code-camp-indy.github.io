@@ -6,7 +6,7 @@ function Folder(params){
 
 	this.build = function(){
 		return _.template(
-			'<a href="<%= href %>">' +
+			'<a href="#" id="<%= href %>">' +
 				'<div class="folder">' +
 					'<div class="img-container">' +
 						'<img class="img-responsive" alt="presentation" src="<%= image %>"/>' +

@@ -4,5 +4,3 @@ function build(folders){
 		$(".gallery-folders").append(new Folder(e).build());
 	})
 }
-
-build(folderInfo)
