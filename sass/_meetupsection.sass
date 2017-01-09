@@ -3,6 +3,8 @@
   background-color: $fccred
   height: auto
   padding-bottom: 10px
+.text-wrapper p
+  width: 90%
 .block
   width: 50%
   background-color: white
@@ -34,8 +36,7 @@
       margin-left: 10px
 .meetupPanel
   background-color: white
-  height: auto
-  min-height: 400px
+  height: 400px
   width: 32%
   position: relative
   float: left
@@ -53,9 +54,10 @@
     margin-left: auto
     margin-right: auto
     margin-top: 10px
-    border-color: $fccred
+    border-color: $fccyellow
     border-width: medium
     border-style: solid
+    width: 90% !important
   h4
     padding-left: 10px
     text-align: center
@@ -77,7 +79,7 @@
     padding-bottom: 5px
     display: block
     display: -webkit-box
-    max-width: 380px
+    // width: 350px
     margin: 0 auto
     -webkit-line-clamp: 3
     -webkit-box-orient: vertical
@@ -93,8 +95,9 @@
     h4
       font-size: 24px
     img
-      width: 50%
-      height: 40%
+      width: 60%
+      height: 50%
+      margin-top: -10px
 @media handheld, screen and (max-width: 414px)
   .meetupPanel
     clear: both
@@ -103,6 +106,7 @@
     margin-right: auto
     img
       width: 70%
+
   .block
     h3
       margin-left: 10px
@@ -137,8 +141,6 @@
     clear: both
     margin-right: 10px
     width: 300px
-    img
-      width: 290px
   .block
     h3
       font-size: 16px
@@ -148,6 +150,8 @@ footer .container ul
   display: inline-block
   min-width: 320px
   list-style: none
+footer p
+  margin: 0 !important
 #sec1
   padding-top: 50px
 #blogs
@@ -156,4 +160,17 @@ footer .container ul
     margin: 0 auto
     li
       font-size: 1.4em
+.text-wrapper
+  height: 115px
+  padding-bottom: 5px
+  // border: 2px solid
+  overflow: hidden !important
+  text-overflow: ellipsis
+.text-wrapper p
+  // width: 280px
+  text-overflow: ellipsis
+.meetupPanel h4
+  // border: 2px solid
+  height: 40px
+  font-size: 16px !important
 // End meetup section
