@@ -3,40 +3,40 @@
   width: 100%;
   min-height: 200px;
   padding: 25px 100px;
-  
+
   .subtitle {
     width: 242px;
     margin: 0px auto 25px auto;
     box-sizing: content-box;
     font-size: 0px;
-    
+
     .toggle {
       display: inline-block;
       width: 100px;
       box-sizing: content-box;
-      
+
       h2 {
         margin: 0px;
         padding: 0px;
       }
-      
+
       &.active {
         color: $fccyellow;
       }
-      
+
       &:hover {
         cursor: pointer;
         color: $fccyellow;
       }
     }
-    
+
     .blog_toggle {
       @extend .toggle;
       border-right: 1px solid black;
       text-align: right;
       padding: 0px 10px;
     }
-    
+
     .projects_toggle {
       @extend .toggle;
       border-left: 1px solid black;
@@ -44,7 +44,7 @@
       padding: 0px 10px;
     }
   }
-  
+
   .blog {
     width: 1000px;
     margin: 10px auto;
@@ -52,36 +52,36 @@
     background-color: white;
     border-radius: 3px;
     border: solid black 2px;
-    
+
     .blog_img_container {
       display: inline-block;
       width: 120px;
       height: 120px;
       padding-right: 10px;
     }
-    
+
     img {
       height: 100%;
       width: 100%;
       margin: 0px;
     }
-    
+
     .blog_description {
       display: inline-block;
       vertical-align: top;
-      
+
       h3 {
         margin: 0px;
         padding: 0px;
       }
     }
-    
+
     .language_icon {
       font-size: 35px;
       padding-right: 5px;
     }
   }
-  
+
   .hidden {
     display: none;
   }
@@ -90,7 +90,7 @@
 @media screen and (max-width: 1200px) {
   .campers_page {
     padding: 25px 0px;
-    
+
     .blog {
       width: 100%;
       border-radius: 0px;
@@ -101,11 +101,11 @@
 }
 
 @media screen and (max-width: 960px) {
-  
+
 }
 
 @media screen and (max-width: 768px) {
-  
+
 }
 
 @media screen and (max-width: 414px) {
@@ -115,7 +115,7 @@
         width: 60px;
         height: 60px;
       }
-      
+
       .language_icon {
         font-size: 20px
       }
