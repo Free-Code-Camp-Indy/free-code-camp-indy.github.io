@@ -37,14 +37,15 @@
           '<img src="images/placeHolder.jpg" class="panel-img img-responsive" alt="<%- timeStatus %>">' +
         '</a>' +
         '<h4><%- title %></h4>' +
-        '<p><%= description %></p>' +
+        '<div class="text-wrapper">' +
+        '<%= description %>' +
         (templateData.isUpcoming ?
           '<br/>' +
           '<p>RSVP Count: <%- rsvp %></p>' +
-          '<p>Time: <%- time %></p>' +
-          '<br/>' +
-          '<a href="<%- joinUrl %>"><div class="fccBtn-small">Join us!</div></a>'
+          '<p>Time: <%- time %></p>'
         : '') +
+        '</div>' +
+        '<a href="<%- joinUrl %>"><div class="fccBtn-small">Join us!</div></a>' +
       '</div>'
     )(templateData);
   }

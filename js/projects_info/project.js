@@ -3,5 +3,5 @@ function project(params) {
   this.imageLocation = params.imageLocation;
   this.link = params.link;
   this.description = params.description;
-  this.languages = params.languages;
+  this.techStack = params.techStack;
 }

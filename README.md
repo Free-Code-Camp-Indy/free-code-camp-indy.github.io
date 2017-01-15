@@ -158,7 +158,7 @@ Note: Make sure you have not committed and pushed up your API key somehow, or el
 
 * __Developers:__
 
- * [Larry Torvalds](http://whitehouse.gov)
+ * [Larry Tooley](https://github.com/larrytooley)
  * [Andrew Allbright](https://github.com/aallbrig)
  * [Gavyn Leavitt](https://github.com/Firearrow5235)
  * [Mark Loeser](https://github.com/MarkLoeser)

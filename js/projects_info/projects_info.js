@@ -9,8 +9,15 @@ var projectsInfo = [
     'name': "Scout-App",
     'imageLocation': './images/project_images/scout-app.svg',
     'link': 'http://scout-app.io/',
-    'description': "Scout-App, the easiest way to use Sass!",
-    'languages': ["jquery", "javascript", "nodejs", "sass", "html5"]
+    'description': 'Scout-App, the easiest way to use Sass!',
+    'techStack': ["html5", "javascript", "jquery", "sass", "nodewebkit"]
+  },
+  {
+    'name': "RegExBreakfast",
+    'imageLocation': './images/project_images/regex-breakfast.png',
+    'link': 'https://github.com/gwenf/regex-tutor',
+    'description': 'Fun and interactive way to learn regex.',
+    'techStack': ["html5", "javascript", "jquery", "sass"]
   }
 ];
 
