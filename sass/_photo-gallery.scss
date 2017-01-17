@@ -13,7 +13,11 @@
   clear: both;
 }
 
+.grid-item,
+.grid-sizer{
+  width: 20%;
+}
 .grid-item {
   float: left;
-  max-width: 400px;
+  min-height: 100px;
 }
