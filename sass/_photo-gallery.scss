@@ -1,6 +1,21 @@
+.filter-menu{
+	span{
+		padding: 0 1%;
+	}
+
+  a{
+    text-decoration: none;
+    color: #484848;
+    &:hover,
+    &:focus{
+      text-decoration: none;
+    }
+  }
+}
+
 .grid {
-  background: #DDD;
   width: 90%;
+  padding-top: 1%;
   padding-left: 4%;
 
   .grid-item,

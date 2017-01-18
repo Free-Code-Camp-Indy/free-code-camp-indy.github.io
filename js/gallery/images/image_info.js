@@ -1,7 +1,7 @@
-var cyberia = [
-	{src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg"},
-	{src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg"},
-	{src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg"},
-	{src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg"},
-	{src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg"},
+var images = [
+	{
+		src: "https://a248.e.akamai.net/secure.meetupstatic.com/photos/event/9/5/4/f/highres_452798223.jpeg",
+		filter: "cyberia"
+	},
+	//etc...
 ];

@@ -1,4 +1,7 @@
 $(function(){
+	
+	//append all images to .grid and then initialize isotope
+
 	var grid = $('.grid').imagesLoaded(function(){
 		$('.grid').isotope({
 			itemSelector: '.grid-item',
