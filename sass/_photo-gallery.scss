@@ -1,23 +1,14 @@
-/* ---- grid ---- */
-
 .grid {
   background: #DDD;
-  width: 1260px;
-  padding-left: 20px;
+  width: 90%;
+  padding-left: 4%;
+
+  .grid-item,
+  .grid-sizer{
+    width: 30%;
+  }
 }
 
-/* clear fix */
-.grid:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
-.grid-item,
-.grid-sizer{
-  width: 20%;
-}
 .grid-item {
   float: left;
-  min-height: 100px;
 }

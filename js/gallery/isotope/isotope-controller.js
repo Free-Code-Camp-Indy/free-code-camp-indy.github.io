@@ -5,5 +5,6 @@ $('.grid').isotope({
   percentPosition: true,
   masonry: {
     columnWidth: '.grid-sizer',
+    gutter: 10
   }
 });
