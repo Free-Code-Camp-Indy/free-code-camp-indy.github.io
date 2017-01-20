@@ -1,6 +1,8 @@
+
 $(function(){
-	
-	//append all images to .grid and then initialize isotope`
+	images.forEach(function(element, i){
+		$('.grid').append(new image(element, i).build())
+	});
 
 	var grid = $('.grid').imagesLoaded(function(){
 		$('.grid').isotope({
@@ -12,7 +14,7 @@ $(function(){
 			}
 		});
 	})
-
+	
 	$(".filter-menu a").on('click', function(){
 		var filterVal = $(this).attr('data-val');
 		console.log(filterVal);
@@ -21,6 +23,7 @@ $(function(){
 
 	$('img').click(function(e){
 		$('.lightbox-content img').attr('src', e.target.src);
+		$('.lightbox-content p').text(images[$(e.target).attr('grid-key')].label);
 		$('.lightbox').show();
 	})
 
