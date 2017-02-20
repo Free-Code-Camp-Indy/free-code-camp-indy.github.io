@@ -16,8 +16,9 @@ $(function(){
 	})
 	
 	$(".filter-menu a").on('click', function(){
+		$("a.active").removeClass("active");
+		$(this).addClass("active");
 		var filterVal = $(this).attr('data-val');
-		console.log(filterVal);
 		grid.isotope({filter: filterVal});
 	})
 
