@@ -1,0 +1,62 @@
+.filter-menu{
+	span{
+		padding: 0 1%;
+	}
+
+  a{
+    text-decoration: none;
+    color: #484848;
+    &:hover,
+    &:focus{
+      text-decoration: none;
+    }
+  }
+}
+
+.grid {
+  width: 90%;
+  padding-top: 1%;
+  padding-left: 4%;
+  
+  .grid-item {
+    float: left;
+  }
+
+  .grid-item,
+  .grid-sizer{
+    width: 30%;
+  }
+}
+
+.lightbox{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.8);      
+  .lightbox-content{
+    width: 50%;
+    margin: 8% 35%;
+
+    img{
+      width: 65%;
+    }
+
+    p{
+      width: 65%;
+      color: white;
+      font-size: 2em;
+      text-align: center;
+    }
+  }
+
+  .close{
+    color: white;
+    padding: 2% 30%;
+    font-size: 28px;
+    font-weight: bold;
+
+    &:hover,
+    &:focus{
+      text-decoration: none;
+      cursor: pointer;
+    }    
+  }
+}
