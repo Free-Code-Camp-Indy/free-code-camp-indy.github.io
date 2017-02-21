@@ -1,4 +1,11 @@
+@mixin mobile {
+  @media only screen and (min-device-width : 320px) and (max-device-width : 480px), screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    @content;
+  }
+}
+
 .filter-menu{
+  padding-bottom: 10%;
 	span{
 		padding: 0 1%;
 	}
@@ -17,6 +24,7 @@
   width: 90%;
   padding-top: 1%;
   padding-left: 4%;
+  padding-bottom: 10%;
   
   .grid-item {
     float: left;
@@ -25,6 +33,9 @@
   .grid-item,
   .grid-sizer{
     width: 30%;
+    @include mobile {
+      width: 45%;
+    }
   }
 }
 
@@ -33,30 +44,26 @@
   background-color: rgba(0,0,0,0.8);      
   .lightbox-content{
     width: 50%;
-    margin: 8% 35%;
+    margin: 2% 25%;
 
     img{
-      width: 65%;
+      width: 100%;
     }
 
     p{
-      width: 65%;
+      width: 100%;
       color: white;
-      font-size: 2em;
+      font-size: 1.5em;
       text-align: center;
+
+      @include mobile {
+        width: 100%;
+      }
     }
-  }
 
-  .close{
-    color: white;
-    padding: 2% 30%;
-    font-size: 28px;
-    font-weight: bold;
-
-    &:hover,
-    &:focus{
-      text-decoration: none;
-      cursor: pointer;
-    }    
+    @include mobile {
+      width: 100%;
+      margin: 0;
+    }
   }
 }
