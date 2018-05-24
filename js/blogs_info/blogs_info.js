@@ -22,7 +22,7 @@ var blogsInfo = [{
   {
     'name': "Gwendolyn Faraday",
     'imageLocation': './images/blog_images/gwen_faraday_blog.jpg',
-    'link': 'http://gwenfaraday.com/LearningCode/'
+    'link': 'http://gwenfaraday.com/learningcode/'
   },
   {
     'name': "Nicholas Gillespie",
@@ -38,16 +38,6 @@ var blogsInfo = [{
     'name': "J.T. Maupin",
     'imageLocation': './images/blog_images/jt_maupin_blog.jpg',
     'link': 'https://jmsmaupin.wordpress.com/'
-  },
-  {
-    'name': "Kimberly Sharpe",
-    'imageLocation': './images/blog_images/kim_sharpe_blog.jpg',
-    'link': 'http://kimmihack.blogspot.com/'
-  },
-  {
-    'name': "Larry Tooley",
-    'imageLocation': './images/blog_images/larry_tooley_blog.jpg',
-    'link': 'http://damagedtechnologies.com'
   }
 ];
 
