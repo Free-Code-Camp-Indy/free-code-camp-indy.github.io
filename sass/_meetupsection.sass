@@ -144,11 +144,18 @@
   .block
     h3
       font-size: 16px
-footer .container ul
+.footer-content
+  display: flex
+  @media screen and (max-width: 800px)
+    flex-flow: column
+    max-width: 600px;
+    min-width: 200px;
+.footer-sponsors
   width: 20%
-  float: left
-  display: inline-block
   min-width: 320px
+  @media screen and (max-width: 800px)
+    width: 100%;
+.footer-sponsors ul
   list-style: none
 footer p
   margin: 0 !important
