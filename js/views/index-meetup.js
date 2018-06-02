@@ -31,12 +31,11 @@
     };
     return _.template(
       '<div class="meetupPanel">' +
-        '<h4><%- timeStatus %></h4>' +
-        '<a href="">' +
+        '<h4><%- title %></h4>' +
+        '<a class="panel-img-container" href="">' +
           // update this to grab the location
           '<img src="images/placeHolder.jpg" class="panel-img img-responsive" alt="<%- timeStatus %>">' +
         '</a>' +
-        '<h4><%- title %></h4>' +
         '<div class="text-wrapper">' +
         '<%= description %>' +
         (templateData.isUpcoming ?
@@ -45,7 +44,13 @@
           '<p>Time: <%- time %></p>'
         : '') +
         '</div>' +
-        '<a href="<%- joinUrl %>"><div class="fccBtn-small">Join us!</div></a>' +
+        '<a class="joinBtn" href="<%- joinUrl %>">' +
+          '<div class="fccBtn-small">' +
+          (templateData.isUpcoming ? 
+            'Join us!' :
+            'You just missed it!') + 
+          '</div>' + 
+        '</a>' +
       '</div>'
     )(templateData);
   }
