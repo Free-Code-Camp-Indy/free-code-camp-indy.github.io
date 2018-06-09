@@ -3,7 +3,7 @@
   background-color: $fccred
   height: auto
   padding: 20px 0 35px 0
-.text-wrapper p
+.meetupPanel__text p
   padding: 0 5%
 .block
   width: 50%
@@ -20,7 +20,7 @@
     margin-top: 5px
     font-weight: bold
     float: right
-    margin-right: 250px
+    // margin-right: 250px
 @media handheld, screen and (max-width: 768px)
   .block
     h3
@@ -45,12 +45,12 @@
   align-items: center
   justify-content: flex-start
   background-color: white
-  height: 400px
+  max-height: 420px
   width: 32%
   min-width: 275px
   position: relative
   margin: 5px
-  border-radius: 5px
+  transition: max-height 300ms ease;
   &:nth-child(even)
     background-color: rgb(222, 222, 222)
   &:nth-child(odd)
@@ -59,7 +59,6 @@
     border-left-width: thick
   .panel-img-container
     width: 100%
-    height: 250px
     overflow: hidden
   img
     display: block
@@ -77,8 +76,7 @@
     display: block
     display: -webkit-box
     max-width: 380px
-    height: 50px
-    margin-bottom: 10px
+    height: 35px
     -webkit-line-clamp: 2
     -webkit-box-orient: vertical
     overflow: hidden
@@ -94,8 +92,15 @@
     -webkit-box-orient: vertical
     overflow: hidden
     text-overflow: ellipsis
-  .joinBtn
+  .meetupPanel__controls
+    width: 100%
     margin-top: auto
+    margin-bottom: 10px
+    display: flex
+    justify-content: center
+    align-items: center
+.meetupPanel--grow
+  max-height: 800px
 @media handheld, screen and (max-width: 414px)
   .block 
     h3
@@ -144,13 +149,32 @@ footer p
     margin: 0 auto
     li
       font-size: 1.4em
-.text-wrapper
-  height: 150px
-  padding-bottom: 5px
-  overflow-y: auto
-  overflow-x: hidden
+.meetupPanel__text
+  display: flex
+  align-items: flex-end
+.meetupPanel__description
+  overflow: hidden
+  max-height: 43px
+  margin-bottom: 20px
+  transition: max-height 300ms ease;
+  p
+    padding-right: 0
+.meetupPanel__ellipsis
+  font-size: 20px
+  height: 43px
+  margin-right: 20px
+.meetupPanel__description--show 
+  max-height: 300px
+.meetupPanel__ellipsis--hide
+  opacity: 0
 .meetupPanel h4
   font-size: 16px !important
-.fccBtn-small
-  margin: 10px auto
+.fccBtn-small.panel-toggler
+  width: 60px
+  margin-left: 0
+  margin-right: 0
+.joinBtn
+  margin: auto;
+  margin-left: 20px
+  margin-right: 0
 // End meetup section

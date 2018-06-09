@@ -36,23 +36,61 @@
           // update this to grab the location
           '<img src="images/placeHolder.jpg" class="panel-img img-responsive" alt="<%- timeStatus %>">' +
         '</a>' +
-        '<div class="text-wrapper">' +
-        '<%= description %>' +
-        (templateData.isUpcoming ?
-          '<br/>' +
-          '<p>RSVP Count: <%- rsvp %></p>' +
-          '<p>Time: <%- time %></p>'
-        : '') +
+        '<div class="meetupPanel__text">' +
+          '<div class="meetupPanel__description">' +
+            '<%= description %>' +
+            (templateData.isUpcoming ?
+              '<br/>' +
+              '<p>RSVP Count: <%- rsvp %></p>' +
+              '<p>Time: <%- time %></p>'
+            : '') +
+          '</div>' +
+          '<span class="meetupPanel__ellipsis">...</span>' +
         '</div>' +
-        '<a class="joinBtn" href="<%- joinUrl %>">' +
-          '<div class="fccBtn-small">' +
-          (templateData.isUpcoming ? 
-            'Join us!' :
-            'You just missed it!') + 
-          '</div>' + 
-        '</a>' +
+        '<div class="meetupPanel__controls">' +
+          '<div class="fccBtn-small panel-toggler">' +
+            '<svg width="30" height="24" viewBox="5 5 12 12">' +
+              '<path fill="grey" d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/>' +
+              '<path d="M0 0h24v24H0z" fill="none"/>' +
+            '</svg>' +
+          '</div>' +
+          '<a class="joinBtn" href="<%- joinUrl %>">' + 
+            '<div class="fccBtn-small">' +
+            (templateData.isUpcoming ? 
+              'Join us!' :
+              'Missed it!') + 
+            '</div>' + 
+          '</a>' +
+        '</div>' +
       '</div>'
     )(templateData);
+  }
+  function handleMeetupPanelToggle() {
+    const $toggler = $('.panel-toggler');
+    
+    const expandMore = `
+      <svg width="30" height="24" viewBox="5 5 12 12">
+        <path fill="grey" d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/>
+        <path d="M0 0h24v24H0z" fill="none"/>
+      </svg>
+    `;
+    
+    const expandLess = `
+      <svg width="30" height="24" viewBox="5 5 12 12">
+          <path fill="grey" d="M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"/>
+          <path d="M0 0h24v24H0z" fill="none"/>
+      </svg>
+    `;
+    
+    $toggler.on('click', function(e) {
+      const panel = $(this).closest('.meetupPanel');
+      let toggled = panel.data('toggled') === undefined ? true : !panel.data('toggled');
+      panel.data('toggled', toggled);
+      panel.toggleClass('meetupPanel--grow');
+      panel.find('.meetupPanel__description').toggleClass('meetupPanel__description--show');
+      panel.find('.meetupPanel__ellipsis').toggleClass('meetupPanel__ellipsis--hide');
+      $(this).html(toggled ? expandLess : expandMore); 
+    });
   }
   // Run only when document is ready.
   $(function () {
@@ -80,6 +118,7 @@
       });
       var innerHtml = panels.join('');
       document.getElementById(targetContentDivId).innerHTML = innerHtml;
+      handleMeetupPanelToggle();
     });
   });
 })();
